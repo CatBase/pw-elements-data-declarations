@@ -1,0 +1,23 @@
+type = struct PARAM_ADJUST_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int level_diff;
+        float adjust_exp;
+        float adjust_sp;
+        float adjust_money;
+        float adjust_matter;
+        float adjust_attack;
+    } level_diff_adjust[16];
+    struct {
+        float adjust_exp;
+        float adjust_sp;
+    } team_adjust[11];
+    struct {
+        float adjust_exp;
+        float adjust_sp;
+    } team_profession_adjust[11];
+    float dmg_adj_to_spec_atk_speed;
+    float atk_rate_adj_to_spec_atk_speed;
+    float use_monster_spirit_adjust[10];
+}

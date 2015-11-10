@@ -1,0 +1,7 @@
+type = struct GM_ACTIVITY_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int openlist[8];
+    int closelist[8];
+    unsigned int disabled;
+}

@@ -1,0 +1,13 @@
+type = struct FACTION_PVP_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int domain_count;
+        int minebase_gen_count;
+        int points_per_gen_minecar;
+        int base_points;
+        int minecar_count_can_rob;
+        int minebase_count_can_rob;
+    } list[8];
+    int controller_id[51];
+}

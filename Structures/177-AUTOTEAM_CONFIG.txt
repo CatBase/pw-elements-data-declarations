@@ -1,0 +1,26 @@
+type = struct AUTOTEAM_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    char file_icon[128];
+    namechar desc[256];
+    unsigned int type;
+    int require_level[2];
+    int require_maxlevel[2];
+    int require_gender;
+    int require_num[2];
+    int num_prof[12];
+    int require_level2;
+    int require_reincarnation_times[2];
+    int require_realm_level[2];
+    int require_soul_power;
+    int worldtag;
+    float trans_pos[3];
+    int worldtag_from[32];
+    unsigned int combined_switch;
+    int time_type;
+    unsigned int week;
+    int day[2][3];
+    int daytime[4];
+    int award[3];
+    unsigned int task[32];
+}

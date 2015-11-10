@@ -1,0 +1,34 @@
+type = struct COUNTRY_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        namechar name[32];
+        char file_icon[128];
+        unsigned long color;
+    } country[4];
+    int flag_controller_id[3];
+    unsigned int flag_mine_id;
+    float attack_flag_goal[3];
+    float attack_flag_goal_radius;
+    float defence_flag_goal[3];
+    float defence_flag_goal_radius;
+    struct {
+        int controller_id;
+        unsigned int id;
+        int group;
+    } attack_tower[9];
+    struct {
+        int controller_id;
+        unsigned int id;
+        int group;
+    } defence_tower[9];
+    struct {
+        struct {
+            int controller_id;
+            unsigned int mine_id;
+        } state[5];
+        float pos[3];
+        float radius;
+        float mine_pos[3];
+    } stronghold[8];
+}

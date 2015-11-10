@@ -1,0 +1,30 @@
+type = struct RECIPE_ESSENCE {
+    unsigned int id;
+    unsigned int id_major_type;
+    unsigned int id_sub_type;
+    namechar name[32];
+    int recipe_level;
+    unsigned int id_skill;
+    int skill_level;
+    int bind_type;
+    struct {
+        unsigned int id_to_make;
+        float probability;
+    } targets[4];
+    float fail_probability;
+    int num_to_make;
+    int price;
+    float duration;
+    int exp;
+    int skillpoint;
+    struct {
+        unsigned int id;
+        int num;
+    } materials[32];
+    unsigned int id_upgrade_equip;
+    float upgrade_rate;
+    unsigned int proc_type;
+    unsigned int character_combo_id;
+    float engrave_upgrade_rate;
+    float addon_inherit_fee_rate;
+}

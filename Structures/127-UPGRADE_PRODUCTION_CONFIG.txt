@@ -1,0 +1,10 @@
+type = struct UPGRADE_PRODUCTION_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int num_refine[12];
+    int num_weapon[2][20];
+    int num_armor[4][20];
+    int num_stone[20];
+    int num_engrave[3];
+    int num_addon[5];
+}

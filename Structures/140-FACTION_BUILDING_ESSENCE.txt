@@ -1,0 +1,15 @@
+type = struct FACTION_BUILDING_ESSENCE {
+    unsigned int id;
+    unsigned int id_sub_type;
+    namechar name[32];
+    char file_icon[128];
+    int level;
+    int require_level;
+    int technology[5];
+    int money;
+    int material[8];
+    int base_time;
+    int delta_time;
+    int controller_id0;
+    int controller_id1;
+}

@@ -1,0 +1,5 @@
+type = struct PLAYER_DEATH_DROP_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    unsigned int itemlist[256];
+}

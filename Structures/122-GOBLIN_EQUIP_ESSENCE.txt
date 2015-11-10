@@ -1,0 +1,19 @@
+type = struct GOBLIN_EQUIP_ESSENCE {
+    unsigned int id;
+    unsigned int id_type;
+    namechar name[32];
+    char file_model[128];
+    char file_icon[128];
+    int equip_type;
+    int req_goblin_level;
+    int strength;
+    int agility;
+    int energy;
+    int tili;
+    int magic[5];
+    int price;
+    int shop_price;
+    int pile_num_max;
+    unsigned int has_guid;
+    unsigned int proc_type;
+}

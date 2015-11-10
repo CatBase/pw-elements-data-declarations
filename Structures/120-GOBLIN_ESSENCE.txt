@@ -1,0 +1,31 @@
+type = struct GOBLIN_ESSENCE {
+    unsigned int id;
+    namechar name[32];
+    char file_model1[128];
+    char file_model2[128];
+    char file_model3[128];
+    char file_model4[128];
+    char file_matter[128];
+    char file_icon1[128];
+    char file_icon2[128];
+    char file_icon3[128];
+    char file_icon4[128];
+    float exp_factor;
+    int init_strength;
+    int init_agility;
+    int init_energy;
+    int init_tili;
+    int max_refine_lvl;
+    int price;
+    int shop_price;
+    int default_skill1;
+    int default_skill2;
+    int default_skill3;
+    struct {
+        int rand_num;
+        float rand_rate;
+    } rand_prop[10];
+    int pile_num_max;
+    unsigned int has_guid;
+    unsigned int proc_type;
+}

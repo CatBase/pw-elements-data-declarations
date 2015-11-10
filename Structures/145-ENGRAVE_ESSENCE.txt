@@ -1,0 +1,21 @@
+type = struct ENGRAVE_ESSENCE {
+    unsigned int id;
+    unsigned int id_major_type;
+    unsigned int id_sub_type;
+    namechar name[32];
+    char file_icon[128];
+    int level;
+    unsigned int equip_mask;
+    int require_level_min;
+    int require_level_max;
+    int duration;
+    struct {
+        unsigned int id;
+        int num;
+    } materials[8];
+    float probability_addon_num[4];
+    struct {
+        unsigned int id;
+        float probability;
+    } addons[32];
+}

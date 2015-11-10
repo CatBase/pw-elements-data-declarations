@@ -1,0 +1,16 @@
+type = struct SHARPENER_ESSENCE {
+    unsigned int id;
+    namechar name[32];
+    char file_matter[128];
+    char file_icon[128];
+    int level;
+    unsigned int equip_mask;
+    int addon[3];
+    int addon_time;
+    int gfx_index;
+    int price;
+    int shop_price;
+    int pile_num_max;
+    unsigned int has_guid;
+    unsigned int proc_type;
+}

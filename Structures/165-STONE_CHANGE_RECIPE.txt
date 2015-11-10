@@ -1,0 +1,12 @@
+type = struct STONE_CHANGE_RECIPE {
+    unsigned int id;
+    unsigned int id_type;
+    namechar name[32];
+    unsigned int id_old_stone;
+    unsigned int id_new_stone;
+    int money;
+    struct {
+        unsigned int id;
+        int num;
+    } materials[8];
+}

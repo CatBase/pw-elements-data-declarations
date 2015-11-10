@@ -1,0 +1,20 @@
+type = struct FACTION_FORTRESS_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int require_level;
+    struct {
+        int id;
+        int count;
+    } require_item[8];
+    struct {
+        int exp;
+        int tech_point;
+    } level[50];
+    int tech_point_cost[5][7];
+    int init_building[20];
+    int controller_id[100];
+    struct {
+        int id;
+        int value;
+    } common_value[100];
+}

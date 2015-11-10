@@ -1,0 +1,6 @@
+type = struct POKER_LEVELEXP_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int exp[100];
+    float exp_adjust[5];
+}

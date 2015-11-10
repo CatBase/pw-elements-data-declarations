@@ -1,0 +1,5 @@
+type = struct PROFIT_TIME_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int upper_limit;
+}

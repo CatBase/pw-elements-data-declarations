@@ -1,0 +1,8 @@
+type = struct NPC_RANDPROP_SERVICE {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        namechar page_title[8];
+        unsigned int id_recipe;
+    } pages[8];
+}

@@ -1,0 +1,6 @@
+type = struct POKER_SUITE_ESSENCE {
+    unsigned int id;
+    namechar name[32];
+    float promote_ratio;
+    unsigned int list[6];
+}

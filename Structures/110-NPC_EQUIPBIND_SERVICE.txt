@@ -1,0 +1,7 @@
+type = struct NPC_EQUIPBIND_SERVICE {
+    unsigned int id;
+    namechar name[32];
+    int id_object_need[4];
+    int price;
+    unsigned int bind_type;
+}

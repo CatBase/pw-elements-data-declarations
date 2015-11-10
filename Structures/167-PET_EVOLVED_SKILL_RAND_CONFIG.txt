@@ -1,0 +1,8 @@
+type = struct PET_EVOLVED_SKILL_RAND_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        float probability;
+        unsigned int list[30];
+    } rand_skill_group[3];
+}

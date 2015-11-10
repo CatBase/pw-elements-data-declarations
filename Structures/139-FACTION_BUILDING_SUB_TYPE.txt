@@ -1,0 +1,4 @@
+type = struct FACTION_BUILDING_SUB_TYPE {
+    unsigned int id;
+    namechar name[32];
+}

@@ -1,0 +1,10 @@
+type = struct AUTOTASK_DISPLAY_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int task_id;
+        char file_icon[128];
+        char file_gfx[128];
+        unsigned long color;
+    } list[16];
+}

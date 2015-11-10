@@ -1,0 +1,5 @@
+type = struct ACC_STORAGE_BLACKLIST_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    unsigned int blacklist[512];
+}

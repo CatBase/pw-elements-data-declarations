@@ -1,0 +1,5 @@
+type = struct FASHION_WEAPON_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    unsigned int action_mask[15];
+}

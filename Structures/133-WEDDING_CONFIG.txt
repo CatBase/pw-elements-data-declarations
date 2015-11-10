@@ -1,0 +1,19 @@
+type = struct WEDDING_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int start_hour;
+        int start_min;
+        int end_hour;
+        int end_min;
+    } wedding_session[10];
+    struct {
+        int year;
+        int month;
+        int day;
+    } reserved_day[20];
+    struct {
+        namechar name[16];
+        float pos[3];
+    } wedding_scene[10];
+}

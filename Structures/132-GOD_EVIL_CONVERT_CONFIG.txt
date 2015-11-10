@@ -1,0 +1,5 @@
+type = struct GOD_EVIL_CONVERT_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int skill_map[128][2];
+}

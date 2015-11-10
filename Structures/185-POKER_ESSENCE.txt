@@ -1,0 +1,33 @@
+type = struct POKER_ESSENCE {
+    unsigned int id;
+    unsigned int id_sub_type;
+    namechar name[32];
+    char file_matter[128];
+    char file_icon[128];
+    char file_img[128];
+    char file_gfx[128];
+    int require_level;
+    int require_control_point[2];
+    int rank;
+    int max_level;
+    int hp;
+    int damage;
+    int magic_damage;
+    int defence;
+    int magic_defence[5];
+    int vigour;
+    int inc_hp;
+    int inc_damage;
+    int inc_magic_damage;
+    int inc_defence;
+    int inc_magic_defence[5];
+    int inc_vigour;
+    int swallow_exp;
+    int addon[4];
+    int show_order;
+    int price;
+    int shop_price;
+    int pile_num_max;
+    unsigned int has_guid;
+    unsigned int proc_type;
+}

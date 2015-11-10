@@ -1,0 +1,13 @@
+type = struct TASK_DICE_BY_WEIGHT_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    unsigned int storage_id;
+    int max_weight;
+    struct {
+        float probability;
+        int weight;
+        unsigned int task_list_config_id;
+    } uniform_weight_list[10];
+    unsigned int other_task_list_config_id;
+    unsigned int storage_refresh_on_crossserver;
+}

@@ -1,0 +1,9 @@
+type = struct PET_EVOLVE_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int num_evolve[3][2];
+        int num_inherit[3][2];
+        int num_rand_skill[3][2];
+    } cost[5];
+}

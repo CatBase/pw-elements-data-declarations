@@ -1,0 +1,11 @@
+type = struct ONLINE_AWARDS_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int max_time;
+    struct {
+        int time;
+        int interval;
+        unsigned int ids[8];
+        int exp[150];
+    } choice[4];
+}

@@ -1,0 +1,8 @@
+type = struct FACE_HAIR_TEXTURE_MAP {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int model_id;
+        int texture_id;
+    } hair_texture_map[128];
+}

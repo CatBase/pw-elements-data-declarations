@@ -1,0 +1,4 @@
+type = struct GOBLIN_EQUIP_TYPE {
+    unsigned int id;
+    namechar name[32];
+}

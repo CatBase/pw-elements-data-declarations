@@ -1,0 +1,8 @@
+type = struct POKER_SUB_TYPE {
+    unsigned int id;
+    namechar name[32];
+    int type;
+    union {
+        UINT64 equip_mask;
+    };
+}

@@ -1,0 +1,14 @@
+type = struct RANDPROP_ESSENCE {
+    unsigned int id;
+    unsigned int id_type;
+    namechar name[32];
+    unsigned int id_skill;
+    int skill_level;
+    int money;
+    int duration;
+    unsigned int equip_id[32];
+    struct {
+        unsigned int id;
+        int num;
+    } materials[8];
+}

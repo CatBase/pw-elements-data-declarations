@@ -1,0 +1,8 @@
+type = struct WIKI_TABOO_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    unsigned int essence[512];
+    unsigned int recipe[128];
+    unsigned int task[512];
+    unsigned int skill[128];
+}

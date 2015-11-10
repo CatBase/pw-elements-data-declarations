@@ -1,0 +1,16 @@
+type = struct NPC_SELL_SERVICE {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        namechar page_title[8];
+        int require_contrib;
+        unsigned int require_force;
+        int require_force_reputation;
+        struct {
+            unsigned int id;
+            int contrib_cost;
+            int force_contribution_cost;
+        } goods[32];
+    } pages[8];
+    unsigned int id_dialog;
+}

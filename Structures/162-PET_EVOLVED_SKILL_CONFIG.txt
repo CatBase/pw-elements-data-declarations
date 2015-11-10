@@ -1,0 +1,8 @@
+type = struct PET_EVOLVED_SKILL_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        int id;
+        int level;
+    } skills[2];
+}

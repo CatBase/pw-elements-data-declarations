@@ -1,0 +1,13 @@
+type = struct NPC_TASK_OUT_SERVICE {
+    unsigned int id;
+    namechar name[32];
+    unsigned int storage_id;
+    unsigned int storage_open_item;
+    unsigned int storage_refresh_item;
+    int storage_refresh_per_day;
+    int storage_refresh_count_min;
+    int storage_refresh_count_max;
+    int storage_deliver_per_day;
+    unsigned int id_tasks[256];
+    unsigned int storage_refresh_on_crossserver;
+}

@@ -1,0 +1,11 @@
+type = struct RAND_SHOP_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    int first_buy_price;
+    int first_buy_range;
+    int price;
+    struct {
+        unsigned int id;
+        float probability;
+    } list[256];
+}

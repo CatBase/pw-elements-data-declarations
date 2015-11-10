@@ -1,0 +1,5 @@
+type = struct TASK_LIST_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    unsigned int id_tasks[256];
+}

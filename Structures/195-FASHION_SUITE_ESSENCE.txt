@@ -1,0 +1,7 @@
+type = struct FASHION_SUITE_ESSENCE {
+    unsigned int id;
+    namechar name[32];
+    char file_icon[128];
+    unsigned int list[6];
+    int show_order;
+}

@@ -1,0 +1,15 @@
+type = struct TITLE_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    namechar desc[256];
+    namechar condition[256];
+    unsigned long color;
+    unsigned int after_name;
+    int phy_damage;
+    int magic_damage;
+    int phy_defence;
+    int magic_defence;
+    int attack;
+    int armor;
+    unsigned int broadcast;
+}

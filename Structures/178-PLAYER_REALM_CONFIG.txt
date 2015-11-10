@@ -1,0 +1,7 @@
+type = struct PLAYER_REALM_CONFIG {
+    unsigned int id;
+    namechar name[32];
+    struct {
+        LEVEL level[10];
+    } list[10];
+}

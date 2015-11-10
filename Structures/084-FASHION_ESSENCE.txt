@@ -1,0 +1,33 @@
+type = struct FASHION_ESSENCE {
+    unsigned int id;
+    unsigned int id_major_type;
+    unsigned int id_sub_type;
+    namechar name[32];
+    char realname[32];
+    char file_matter[128];
+    char file_icon[128];
+    unsigned int equip_location;
+    int level;
+    int require_level;
+    int require_dye_count;
+    int price;
+    int shop_price;
+    int gender;
+    unsigned int id_hair;
+    unsigned int id_hair_texture;
+    int pile_num_max;
+    unsigned int has_guid;
+    unsigned int proc_type;
+    char wear_action[32];
+    char file_model_right[128];
+    char file_model_left[128];
+    unsigned int character_combo_id;
+    unsigned int action_type;
+    unsigned int combined_switch;
+    float h_min;
+    float h_max;
+    float s_min;
+    float s_max;
+    float v_min;
+    float v_max;
+}
