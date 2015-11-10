@@ -245,6 +245,11 @@
             <Field Name="Title" Type="UString:16" />
             <ShopItem Name="ShopItem" Count="16" />
         </Struct>
+        <Struct Name="DropMine">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Probability" Type="Single" />
+            <Field Name="Life" Type="Int32" />
+        </Struct>
     </Structs>
     <File>
         <Field Name="Version" Type="Int32" />
@@ -816,6 +821,9 @@
             <Field Name="AtkAdjust" Type="Int32" />
             <Field Name="MaxMoveRange" Type="Single" />
             <Field Name="DropForNoProfitTime" Type="Int32" />
+            <Field Name="DropMineConditionFlag" Type="Int32" />
+            <Field Name="DropMineProbability" Type="Single" />
+            <DropMine Name="DropMines" ElementName="DropMine" Count="4" />
         </List>
         <List Name="NPC Talk Services" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
@@ -1181,7 +1189,7 @@
             <Field Name="Exp" Type="Int32" />
             <Field Name="SP" Type="Int32" />
             <Field Name="Model" Type="String:128" />
-            <Chance Name="Materials" Count="16" />
+            <DropMine Name="DropMines" ElementName="DropMine" Count="16" />
             <AmountChance Name="MaxCount" Count="2" />
             <Field Name="ReceiveTaskID" Type="Int32" />
             <Field Name="ActivateTaskID" Type="Int32" />
@@ -2019,7 +2027,7 @@
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
             <Field Name="Surface" Type="String:128" />
-            <Field Name="SkillID" Type="Int32" />
+            <Array Name="SkillIDs" Type="Int32" Length="4" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
