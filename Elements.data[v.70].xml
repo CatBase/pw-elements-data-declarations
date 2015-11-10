@@ -1,0 +1,1978 @@
+<ElementsData Type="PerfectWorld" Version="70">
+    <Structs>
+        <Struct Name="ValueRangeInt">
+            <Field Name="Low" Type="Int32" />
+            <Field Name="High" Type="Int32" />
+        </Struct>
+        <Struct Name="ValueRangeSingle">
+            <Field Name="Low" Type="Single" />
+            <Field Name="High" Type="Single" />
+        </Struct>
+        <Struct Name="Chance">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Percent" Type="Single" />
+        </Struct>
+        <Struct Name="AmountChance">
+            <Field Name="Count" Type="Int32" />
+            <Field Name="Percent" Type="Single" />
+        </Struct>
+        <Struct Name="SkillChance">
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillLevel" Type="Int32" />
+            <Field Name="Percent" Type="Single" />
+        </Struct>
+        <Struct Name="Skill">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Level" Type="Int32" />
+        </Struct>
+        <Struct Name="MagicElements">
+            <Field Name="Metal" Type="Int32" />
+            <Field Name="Wood" Type="Int32" />
+            <Field Name="Water" Type="Int32" />
+            <Field Name="Fire" Type="Int32" />
+            <Field Name="Earth" Type="Int32" />
+        </Struct>
+        <Struct Name="Junk1">
+            <Field Name="Unk" Type="Int32" />
+            <Field Name="Size" Type="Int32" />
+            <Field Name="Bytes" Type="Bytes:%Size%" />
+            <Field Name="Unk1" Type="Int32" />
+        </Struct>
+        <Struct Name="Junk2">
+            <Field Name="Unk" Type="Int32" />
+            <Field Name="Size" Type="Int32" />
+            <Field Name="Bytes" Type="Bytes:%Size%" />
+        </Struct>
+        <Struct Name="StockItem">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="ContributionPoints" Type="Int32" />
+            <Field Name="ForcePoints" Type="Int32" />
+        </Struct>
+        <Struct Name="StockPage">
+            <Field Name="Label" Type="UString:16" />
+            <Field Name="RequiredContribPoints" Type="Int32" />
+            <Field Name="RequiredForceID" Type="Int32" />
+            <Field Name="RequiredForcePoints" Type="Int32" />
+            <StockItem Name="Items" Count="32" />
+        </Struct>
+        <Struct Name="Matter">
+            <Field Name="ItemID" Type="Int32" />
+            <Field Name="Count" Type="Int32" />
+        </Struct>
+        <Struct Name="Task">
+            <Field Name="TaskID" Type="Int32" />
+            <Matter Name="Matters" Count="4" />
+        </Struct>
+        <Struct Name="Teleport">
+            <Field Name="TeleportID" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+        </Struct>
+        <Struct Name="RecipePage">
+            <Field Name="Label" Type="UString:16" />
+            <Array Name="RecipeIDs" Type="Int32" Length="32" />
+        </Struct>
+        <Struct Name="TalkProcOption">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Text" Type="UString:128" />
+            <Field Name="Param" Type="Int32" />
+        </Struct>
+        <Struct Name="TalkProcWindow">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="ParentID" Type="Int32" />
+            <Field Name="TalkTextLength" Type="Int32" />
+            <Field Name="TalkText" Type="UString:%TalkTextLength%*2" />
+            <Field Name="NumOptions" Type="Int32" />
+            <TalkProcOption Name="Options" Count="%NumOptions%" />
+        </Struct>
+        <Struct Name="LevelDiffAdjust">
+            <Field Name="LvlDiff" Type="Int32" />
+            <Field Name="AdjustExp" Type="Single" />
+            <Field Name="AdjustSp" Type="Single" />
+            <Field Name="AdjustMoney" Type="Single" />
+            <Field Name="AdjustMatter" Type="Single" />
+            <Field Name="AdjustAttack" Type="Single" />
+        </Struct>
+        <Struct Name="TeamAdjust">
+            <Field Name="AdjustExp" Type="Single" />
+            <Field Name="AdjustSp" Type="Single" />
+        </Struct>
+        <Struct Name="MineMonsterGen">
+            <Field Name="MonsterID" Type="Int32" />
+            <Field Name="Count" Type="Int32" />
+            <Field Name="Radius" Type="Single" />
+            <Field Name="LifeTime" Type="Int32" />
+        </Struct>
+        <Struct Name="MineAgroFaction">
+            <Field Name="Faction" Type="Int32" />
+            <Field Name="Radius" Type="Single" />
+            <Field Name="Count" Type="Int32" />
+        </Struct>
+        <Struct Name="TowerBuildInfo">
+            <Field Name="ProgressMonsterID" Type="Int32" />
+            <Field Name="FinalMonsterID" Type="Int32" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="BuildTime" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+        </Struct>
+        <Struct Name="ResetPropEntry">
+            <Field Name="RequireItem" Type="Int32" />
+            <Field Name="StrDelta" Type="Int32" />
+            <Field Name="AgiDelta" Type="Int32" />
+            <Field Name="VitDelta" Type="Int32" />
+            <Field Name="IntDelta" Type="Int32" />
+        </Struct>
+        <Struct Name="TextureMap">
+            <Field Name="ModelID" Type="Int32" />
+            <Field Name="TextureID" Type="Int32" />
+        </Struct>
+        <Struct Name="NumWeapon">
+            <Array Name="NumWeapons" ElementName="Count" Type="Int32" Length="20" />
+        </Struct>
+        <Struct Name="NumArmor">
+            <Array Name="NumArmors" ElementName="Count" Type="Int32" Length="20" />
+        </Struct>
+        <Struct Name="ExpConfig">
+            <Field Name="MultiTime" Type="Int32" />
+            <Field Name="Rate" Type="Single" />
+            <Field Name="ItemCount" Type="Int32" />
+            <Field Name="DemultiWaitTime" Type="Int32" />
+            <Field Name="DemultiTime" Type="Int32" />
+        </Struct>
+        <Struct Name="TimePeriod">
+            <Field Name="StartHour" Type="Int32" />
+            <Field Name="StartMinute" Type="Int32" />
+            <Field Name="StopHour" Type="Int32" />
+            <Field Name="StopMinute" Type="Int32" />
+        </Struct>
+        <Struct Name="Date">
+            <Field Name="Year" Type="Int32" />
+            <Field Name="Month" Type="Int32" />
+            <Field Name="Day" Type="Int32" />
+        </Struct>
+        <Struct Name="Location" Count="2">
+            <Field Name="Place" Type="UString:32" />
+            <Field Name="PosX" Type="Single" />
+            <Field Name="PosZ" Type="Single" />
+            <Field Name="PosY" Type="Single" />
+        </Struct>
+        <Struct Name="GuildBaseLevel">
+            <Field Name="Exp" Type="Int32" />
+            <Field Name="TechPoints" Type="Int32" />
+        </Struct>
+        <Struct Name="CommonValue">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Value" Type="Int32" />
+        </Struct>
+        <Struct Name="RandDropData">
+            <Field Name="Label" Type="UString:16" />
+            <Field Name="ItemID" Type="Int32" />
+        </Struct>
+        <Struct Name="ConsumePoint">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Point" Type="Int32" />
+        </Struct>
+        <Struct Name="AreaLimits">
+            <Field Name="WorldID" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredReplyLevel" Type="Int32" />
+            <Field Name="RequiredReplyLevel2" Type="Int32" />
+        </Struct>
+        <Struct Name="AwardChoice">
+            <Field Name="Time" Type="Int32" />
+            <Field Name="Interval" Type="Int32" />
+            <Array Name="IDs" ElementName="ID" Type="Int32" Length="8" />
+            <Array Name="Exp" Type="Int32" Length="150" />
+        </Struct>
+        <Struct Name="Country">
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Color" Type="Single" />
+        </Struct>
+    </Structs>
+    <File>
+        <Field Name="Version" Type="Int32" />
+        <Field Name="Timestamp" Type="Int32" />
+        <List Name="Bonuses" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Count" Type="Int32" />
+            <Array Name="Arguments" Type="Int32" Length="3" />
+        </List>
+        <List Name="Weapon Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Weapon SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="GFX" Type="String:128" />
+            <Field Name="SFX" Type="String:128" />
+            <Field Name="ProbFastest" Type="Single" />
+            <Field Name="ProbFast" Type="Single" />
+            <Field Name="ProbNormal" Type="Single" />
+            <Field Name="ProbSlow" Type="Single" />
+            <Field Name="ProbSlowest" Type="Single" />
+            <Field Name="AtkSpeed" Type="Single" />
+            <Field Name="PenaltyRange" Type="Single" />
+            <Field Name="ActionType" Type="Int32" />
+        </List>
+        <List Name="Weapons" Interface="IElementsRefinableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="AmmoType" Type="Int32" />
+            <Field Name="ModelRight" Type="String:128" />
+            <Field Name="ModelLeft" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="StrRequired" Type="Int32" />
+            <Field Name="AgiRequired" Type="Int32" />
+            <Field Name="IntRequired" Type="Int32" />
+            <Field Name="VitRequired" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="LvlRequired" Type="Int32" />
+            <Field Name="ReputationRequired" Type="Int32" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="FixedProps" Type="Int32" />
+            <Field Name="MinPhysicalAttack" Type="Int32" />
+            <ValueRangeInt Name="MaxPhysicalAttack" />
+            <Field Name="MinMagicalAttack" Type="Int32" />
+            <ValueRangeInt Name="MaxMagicalAttack" />
+            <Field Name="AttackRange" Type="Single" />
+            <Field Name="ShortRangeMode" Type="Int32" />
+            <ValueRangeInt Name="Durability" />
+            <Field Name="RefineID" Type="Int32" />
+            <Field Name="RefineMaterialAmount" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="RepairFee" Type="Int32" />
+            <Array Name="DropSocketChances" Type="Single" Length="3" />
+            <Array Name="CraftSocketChances" Type="Single" Length="3" />
+            <Array Name="BonusChances" Type="Single" Length="5" />
+            <Field Name="UniqueAddonChance" Type="Single" />
+            <Chance Name="DropBonuses" Count="32" />
+            <Chance Name="CraftBonuses" Count="32" />
+            <Chance Name="Uniques" Count="16" />
+            <ValueRangeInt Name="DropDurability" />
+            <Field Name="DecomposePrice" Type="Int32" />
+            <Field Name="DecomposeTime" Type="Int32" />
+            <Field Name="DecomposeToItem" Type="Int32" />
+            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="ShatterToItem" Type="Int32" />
+            <Field Name="ShatterItemCount" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Armor Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Armor SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Mask" Type="Int32" />
+        </List>
+        <List Name="Armors" Interface="IElementsRefinableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RealName" Type="String:32" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="EquipLocation" Type="Int32" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="StrRequired" Type="Int32" />
+            <Field Name="AgiRequired" Type="Int32" />
+            <Field Name="IntRequired" Type="Int32" />
+            <Field Name="VitRequired" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="LvlRequired" Type="Int32" />
+            <Field Name="ReputationRequired" Type="Int32" />
+            <Field Name="FixedProps" Type="Int32" />
+            <ValueRangeInt Name="PhysicalDefense" />
+            <ValueRangeInt Name="MagicalDefenseMetal" />
+            <ValueRangeInt Name="MagicalDefenseWood" />
+            <ValueRangeInt Name="MagicalDefenseWater" />
+            <ValueRangeInt Name="MagicalDefenseFire" />
+            <ValueRangeInt Name="MagicalDefenseEarth" />
+            <ValueRangeInt Name="MPEnhancement" />
+            <ValueRangeInt Name="HPEnhancement" />
+            <ValueRangeInt Name="EvasionEnhancement" />
+            <ValueRangeInt Name="Durability" />
+            <Field Name="RefineID" Type="Int32" />
+            <Field Name="RefineMaterialAmount" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="RepairFee" Type="Int32" />
+            <Array Name="DropSocketChances" Type="Single" Length="5" />
+            <Array Name="CraftSocketChances" Type="Single" Length="5" />
+            <Array Name="BonusChances" Type="Single" Length="4" />
+            <Chance Name="DropBonuses" Count="32" />
+            <Chance Name="CraftBonuses" Count="32" />
+            <ValueRangeInt Name="DropDurability" />
+            <Field Name="DecomposePrice" Type="Int32" />
+            <Field Name="DecomposeTime" Type="Int32" />
+            <Field Name="DecomposeToItem" Type="Int32" />
+            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="ShatterToItem" Type="Int32" />
+            <Field Name="ShatterItemCount" Type="Int32" />
+            <Field Name="HairStyle" Type="Int32" />
+            <Field Name="FaceStyle" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+            <Field Name="ForceAllMDef" Type="Int32" />
+        </List>
+        <List Name="Decoration Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Decoration SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Mask" Type="Int32" />
+        </List>
+        <List Name="Decorations" Interface="IElementsRefinableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="StrRequired" Type="Int32" />
+            <Field Name="AgiRequired" Type="Int32" />
+            <Field Name="IntRequired" Type="Int32" />
+            <Field Name="VitRequired" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="LvlRequired" Type="Int32" />
+            <Field Name="ReputationRequired" Type="Int32" />
+            <Field Name="FixedProps" Type="Int32" />
+            <ValueRangeInt Name="PhysicalAttack" />
+            <ValueRangeInt Name="MagicalAttack" />
+            <ValueRangeInt Name="PhysicalDefense" />
+            <ValueRangeInt Name="MagicalDefenseMetal" />
+            <ValueRangeInt Name="MagicalDefenseWood" />
+            <ValueRangeInt Name="MagicalDefenseWater" />
+            <ValueRangeInt Name="MagicalDefenseFire" />
+            <ValueRangeInt Name="MagicalDefenseEarth" />
+            <ValueRangeInt Name="Evasion" />
+            <ValueRangeInt Name="Durability" />
+            <Field Name="RefineID" Type="Int32" />
+            <Field Name="RefineMaterialAmount" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="RepairFee" Type="Int32" />
+            <Array Name="BonusChances" Type="Single" Length="4" />
+            <Chance Name="DropBonuses" Count="32" />
+            <Chance Name="CraftBonuses" Count="32" />
+            <ValueRangeInt Name="DropDurability" />
+            <Field Name="DecomposePrice" Type="Int32" />
+            <Field Name="DecomposeTime" Type="Int32" />
+            <Field Name="DecomposeToItem" Type="Int32" />
+            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="ShatterToItem" Type="Int32" />
+            <Field Name="ShatterItemCount" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Potion Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Potion SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Potions" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="Delay" Type="Int32" />
+            <Field Name="RestoreHP" Type="Int32" />
+            <Field Name="OverTimeHP" Type="Int32" />
+            <Field Name="RestoreMP" Type="Int32" />
+            <Field Name="OverTimeMP" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Material Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Material SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Materials" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Surface" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="DecomposePrice" Type="Int32" />
+            <Field Name="DecomposeTime" Type="Int32" />
+            <Field Name="DecomposeToItem" Type="Int32" />
+            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Attacking Charm Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Attacking Charms" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="CharmType" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <ValueRangeInt Name="RequiredLvl" />
+            <Field Name="AttackEnhancement" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Defensive Charm Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Defensive Charms" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="GFX" Type="String:128" />
+            <Field Name="SFX" Type="String:128" />
+            <Field Name="CharmType" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <ValueRangeInt Name="RequiredLvl" />
+            <Field Name="ReduceDamage" Type="Single" />
+            <Field Name="OverTime" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <Junk1 />
+        <List Name="Skill Classes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Skill Books" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Class" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Flying Mounts" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <ValueRangeSingle Name="Speed" />
+            <ValueRangeSingle Name="RushSpeed" />
+            <ValueRangeSingle Name="Energy" />
+            <Field Name="EnergyPerItem" Type="Single" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="DecomposeToItem" Type="Int32" />
+            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Angel Wings" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="SpeedIncrease" Type="Single" />
+            <Field Name="MPLaunch" Type="Int32" />
+            <Field Name="MPPerSec" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Town Scrolls" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="CastTime" Type="Single" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Union Scrolls" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="CastTime" Type="Single" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Tools" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="CastTime" Type="Single" />
+            <Field Name="Delay" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Chi Stones" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Quest Items" Interface="IElementsItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Thrown Weapons" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="GFX1" Type="String:128" />
+            <Field Name="GFX2" Type="String:128" />
+            <Field Name="SFX" Type="String:128" />
+            <Field Name="StrRequired" Type="Int32" />
+            <Field Name="AgiRequired" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="MinPhysicalAttack" Type="Int32" />
+            <ValueRangeInt Name="MaxPhysicalAttack" />
+            <Field Name="AtkDelay" Type="Single" />
+            <Field Name="AtkRange" Type="Single" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+            </List>
+        <List Name="Ammo Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Ammunitions" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:192" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="GFX1" Type="String:128" />
+            <Field Name="GFX2" Type="String:128" />
+            <Field Name="SFX" Type="String:128" />
+            <ValueRangeInt Name="ItemGrade" />
+            <Field Name="Enhance" Type="Int32" />
+            <Field Name="EnhanceScale" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Array Name="BonusesID" Type="Int32" Length="4" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Quiver Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Quivers" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ItemID" Type="Int32" />
+            <ValueRangeInt Name="Count" />
+        </List>
+        <List Name="Soulgem Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Soulgems" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="SoulgemType" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="InstallPrice" Type="Int32" />
+            <Field Name="RemovePrice" Type="Int32" />
+            <Field Name="WeaponBonusID" Type="Int32" />
+            <Field Name="ArmorBonusID" Type="Int32" />
+            <Field Name="WeaponDescritpion" Type="UString:32" />
+            <Field Name="ArmorDescription" Type="UString:32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Monster Addons" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Count" Type="Int32" />
+            <Array Name="BonusesID" Type="Int32" Length="3" />
+        </List>
+        <List Name="Monster Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Chance Name="Addons" Count="16" />
+        </List>
+        <List Name="Monsters" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Property" Type="UString:32" />
+            <Field Name="Description" Type="UString:32" />
+            <Field Name="EnemyFaction" Type="Int32" />
+            <Field Name="FriendFaction" Type="Int32" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="GFX" Type="String:128" />
+            <Field Name="AttackGFX" Type="String:128" />
+            <Field Name="Size" Type="Single" />
+            <Field Name="AttackDelay" Type="Single" />
+            <Field Name="StrategyID" Type="Int32" />
+            <Field Name="RoleInWar" Type="Int32" />
+            <Field Name="Lvl" Type="Int32" />
+            <Field Name="PowerLvl" Type="Int32" />
+            <Field Name="EggID" Type="Int32" />
+            <Field Name="HP" Type="Int32" />
+            <Field Name="PhysicalDefense" Type="Int32" />
+            <MagicElements Name="MagicalDefense" />
+            <Field Name="ImmunType" Type="Int32" />
+            <Field Name="Exp" Type="Int32" />
+            <Field Name="Sp" Type="Int32" />
+            <Field Name="MoneyAverage" Type="Int32" />
+            <Field Name="MoneyVar" Type="Int32" />
+            <Field Name="ShortRangeMode" Type="Int32" />
+            <Field Name="SightRange" Type="Int32" />
+            <Field Name="Accuracy" Type="Int32" />
+            <Field Name="Evasion" Type="Int32" />
+            <ValueRangeInt Name="PhysicalAttack" />
+            <ValueRangeInt Name="MetalAttack" />
+            <ValueRangeInt Name="WoodAttack" />
+            <ValueRangeInt Name="WaterAttack" />
+            <ValueRangeInt Name="FireAttack" />
+            <ValueRangeInt Name="EarthAttack" />
+            <Field Name="AttackRange" Type="Single" />
+            <Field Name="AttackSpeed" Type="Single" />
+            <ValueRangeInt Name="MagicalAttack" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="HPRegen" Type="Int32" />
+            <Field Name="AggroMode" Type="Int32" />
+            <Field Name="FactionAskHelp" Type="Int32" />
+            <Field Name="FactionCanHelp" Type="Int32" />
+            <Field Name="AggroRange" Type="Single" />
+            <Field Name="AggroTime" Type="Single" />
+            <Field Name="InhabitType" Type="Int32" />
+            <Field Name="PatrollMode" Type="Int32" />
+            <Field Name="StandMode" Type="Int32" />
+            <Field Name="WalkSpeed" Type="Single" />
+            <Field Name="RunSpeed" Type="Single" />
+            <Field Name="FlySpeed" Type="Single" />
+            <Field Name="SwimSpeed" Type="Single" />
+            <Field Name="AttackDegree" Type="Int32" />
+            <Field Name="DefenseDegree" Type="Int32" />
+            <Field Name="AIPolicyID" Type="Int32" />
+            <Chance Name="AgroStrategy" Count="4" />
+            <SkillChance Name="SkillOnHP75" Count="5" />
+            <SkillChance Name="SkillOnHP50" Count="5" />
+            <SkillChance Name="SkillOnHP25" Count="5" />
+            <Field Name="AfterDeath" Type="Int32" />
+            <Skill Name="Skills" Count="32" />
+            <Array Name="DropItemsChances" Type="Single" Length="4" />
+            <Field Name="DropLoops" Type="Int32" />
+            <Field Name="DropProtected" Type="Int32" />
+            <Chance Name="DropMatters" Count="32" />
+            <Field Name="HighestFrequency" Type="Int32" />
+            <Field Name="NoAcceptPlayerBuff" Type="Int32" />
+            <Field Name="InvisibleLevel" Type="Int32" />
+            <Field Name="UninvisibleLevel" Type="Int32" />
+            <Field Name="NoAutoFight" Type="Int32" />
+            <Field Name="FixedDirection" Type="Int32" />
+            <Field Name="BuildingID" Type="Int32" />
+            <Field Name="CombinedSwitch" Type="Int32" />
+            <Field Name="HPAdjust" Type="Int32" />
+            <Field Name="DefAdjust" Type="Int32" />
+            <Field Name="AtkAdjust" Type="Int32" />
+            <Field Name="DropForNoProfitTime" Type="Single" />
+        </List>
+        <List Name="NPC Talk Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Sell Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <StockPage Name="Pages" Count="8" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Purchase Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Repair Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Imbue Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:192" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Purify Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:192" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Receive Quest Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="Tasks" ElementName="TaskID" Type="Int32" Length="256" />
+        </List>
+        <List Name="NPC Activate Quest Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="StorageID" Type="Int32" />
+            <Field Name="StorageOpenItem" Type="Int32" />
+            <Field Name="StorageRefreshItem" Type="Int32" />
+            <Field Name="StorageRefreshPerDay" Type="Int32" />
+            <Field Name="StorageRefreshCountMin" Type="Int32" />
+            <Field Name="StorageRefreshCountMax" Type="Int32" />
+            <Field Name="StorageDeliverPerDay" Type="Int32" />
+            <Array Name="Tasks" ElementName="TaskID" Type="Int32" Length="256" />
+        </List>
+        <List Name="NPC Matter Quest Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Task Name="Tasks" Count="16" />
+        </List>
+        <List Name="NPC Skill Trainer Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="Skills" ElementName="SkillID" Type="Int32" Length="128" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Cure Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Teleport Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Count" Type="Int32" />
+            <Teleport Name="Teleports" Count="32" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Transport Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="NPC Proxy Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Storage Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="NPC Crafting Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="ProduceType" Type="Int32" />
+            <RecipePage Name="Pages" Count="8" />
+        </List>
+        <List Name="NPC Decompose Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="DecomposeSkillID" Type="Int32" />
+        </List>
+        <List Name="NPC Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="NPCs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="RefreshTime" Type="Single" />
+            <Field Name="AttackStrategy" Type="Int32" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="TaxRate" Type="Single" />
+            <Field Name="MonsterID" Type="Int32" />
+            <Field Name="HelloMsg" Type="UString:512" />
+            <Field Name="TeleportID" Type="Int32" />
+            <Field Name="DomainRelated" Type="Int32" />
+            <Field Name="TalkService" Type="Int32" />
+            <Field Name="SellService" Type="Int32" />
+            <Field Name="BuyService" Type="Int32" />
+            <Field Name="RepairService" Type="Int32" />
+            <Field Name="InstallSoulgemService" Type="Int32" />
+            <Field Name="RemoveSoulgemService" Type="Int32" />
+            <Field Name="ActivateTaskService" Type="Int32" />
+            <Field Name="ReceiveTaskService" Type="Int32" />
+            <Field Name="TaskMatterService" Type="Int32" />
+            <Field Name="SkillService" Type="Int32" />
+            <Field Name="HealService" Type="Int32" />
+            <Field Name="TeleportService" Type="Int32" />
+            <Field Name="TransportService" Type="Int32" />
+            <Field Name="ProxyServices" Type="Int32" />
+            <Field Name="StorageService" Type="Int32" />
+            <Field Name="MakeService" Type="Int32" />
+            <Field Name="DecomposeService" Type="Int32" />
+            <Field Name="IdentifyService" Type="Int32" />
+            <Field Name="WarTowerBuildService" Type="Int32" />
+            <Field Name="ResetPropService" Type="Int32" />
+            <Field Name="PetNameService" Type="Int32" />
+            <Field Name="PetLearnSkillService" Type="Int32" />
+            <Field Name="PetForgetSkillService" Type="Int32" />
+            <Field Name="EquipBindService" Type="Int32" />
+            <Field Name="EquipDestroyService" Type="Int32" />
+            <Field Name="EquipUndestroyService" Type="Int32" />
+            <Field Name="GenieSkillService" Type="Int32" />
+            <Field Name="CombinedServices" Type="Int32" />
+            <Field Name="MineID" Type="Int32" />
+            <Field Name="NoCollision" Type="Int32" />
+            <Field Name="EngravingService" Type="Int32" />
+            <Field Name="RandDropService" Type="Int32" />
+            <Field Name="CombinedServices2" Type="Int32" />
+            <Field Name="ForceService" Type="Int32" />
+        </List>
+        <List Name="NPC Dialogue Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:128" />
+            <Field Name="NumWindows" Type="Int32" />
+            <TalkProcWindow Name="Windows" Count="%NumWindows%" />
+        </List>
+        <List Name="Face Textures" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData1" Type="String:128" />
+            <Field Name="FaceData2" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="VisualizeID" Type="Int32" />
+            <Field Name="UserData" Type="Int32" />
+            <Field Name="FacepillOnly" Type="Int32" />
+            <Field Name="FashionHeadOnly" Type="Int32" />
+        </List>
+        <List Name="Face Shapes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="VisualizeID" Type="Int32" />
+            <Field Name="UserData" Type="Int32" />
+            <Field Name="FacepillOnly" Type="Int32" />
+        </List>
+        <List Name="Emotion Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Icon" Type="String:128" />
+        </List>
+        <List Name="Emotions" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="EmotionID" Type="Int32" />
+        </List>
+        <List Name="Hears" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData1" Type="String:128" />
+            <Field Name="FaceData2" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="VisualizeID" Type="Int32" />
+            <Field Name="UserData" Type="Int32" />
+            <Field Name="FacepillOnly" Type="Int32" />
+        </List>
+        <List Name="Beards" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="VisualizeID" Type="Int32" />
+            <Field Name="FacepillOnly" Type="Int32" />
+        </List>
+        <List Name="ColorPickers" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+        </List>
+        <List Name="Character Templates" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+        </List>
+        <List Name="Recipe Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Recipe SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Recipes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="BindType" Type="Int32" />
+            <Chance Name="Targets" Count="4" />
+            <Field Name="FailureChance" Type="Single" />
+            <Field Name="Count" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+            <Field Name="CraftTime" Type="Single" />
+            <Field Name="Exp" Type="Int32" />
+            <Field Name="Sp" Type="Int32" />
+            <Matter Name="Materials" Count="32" />
+            <Field Name="UpgradeEquipID" Type="Int32" />
+            <Field Name="UpgradeRate" Type="Single" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Opponents Lists" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="EnemyFactions" Type="Int32" Length="32" />
+        </List>
+        <List Name="Occupations" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Occupation" Type="Int32" />
+            <Field Name="Race" Type="Int32" />
+            <Field Name="EnemyFaction" Type="Int32" />
+            <Field Name="AttackSpeed" Type="Single" />
+            <Field Name="AttackRange" Type="Single" />
+            <Field Name="HPRegen" Type="Int32" />
+            <Field Name="MPRegen" Type="Int32" />
+            <Field Name="WalkSpeed" Type="Single" />
+            <Field Name="RunSpeed" Type="Single" />
+            <Field Name="SwimSpeed" Type="Single" />
+            <Field Name="FlySpeed" Type="Single" />
+            <Field Name="CritRate" Type="Int32" />
+            <Field Name="HPxVit" Type="Int32" />
+            <Field Name="MPxInt" Type="Int32" />
+            <Field Name="AccuracyxAgi" Type="Int32" />
+            <Field Name="EvasionxAgi" Type="Int32" />
+            <Field Name="HPLvlUp" Type="Int32" />
+            <Field Name="MPLvlUp" Type="Int32" />
+            <Field Name="PAtkLvlUp" Type="Single" />
+            <Field Name="MAtkLvlUp" Type="Single" />
+            <Field Name="PDefLvlUp" Type="Int32" />
+            <Field Name="MDefLvlUp" Type="Int32" />
+            <Field Name="AgroIncrease" Type="Int32" />
+        </List>
+        <List Name="Param Adjust Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <LevelDiffAdjust Name="LevelDiffAdjust" Count="16" />
+            <TeamAdjust Name="TeamAdjust" Count="11" />
+            <TeamAdjust Name="TeamProfessionAdjust" Count="11" />
+            <Field Name="dmg_adj_to_spec_atk_speed" Type="Single" />
+            <Field Name="atk_rate_adj_to_spec_atk_speed" Type="Single" />
+        </List>
+        <List Name="Player Action Info Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="ActionName" Type="String:32" />
+            <Field Name="ActionPrefix" Type="String:32" />
+            <Array Name="Suffix" Type="String:32" Length="13" />
+            <Field Name="HideWeapon" Type="Int32" />
+        </List>
+        <List Name="Gift Boxes" Interface="IElementsItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Chance Name="TaskChances" Count="20" />
+            <Field Name="UseOnPickUp" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+            <Field Name="NoUseInCombat" Type="Int32" />
+        </List>
+        <List Name="TaskMatters" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Face Falings" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="FaceData" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="VisualizeID" Type="Int32" />
+            <Field Name="FacepillOnly" Type="Int32" />
+        </List>
+        <List Name="Exp Tables" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="Exp" Type="Int32" Length="150" />
+        </List>
+        <List Name="Mine Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Mines" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="EliminateTool" Type="Int32" />
+            <Field Name="MinTime" Type="Int32" />
+            <Field Name="MaxTime" Type="Int32" />
+            <Field Name="Exp" Type="Int32" />
+            <Field Name="SP" Type="Int32" />
+            <Field Name="Model" Type="String:128" />
+            <Chance Name="Materials" Count="16" />
+            <AmountChance Name="MaxCount" Count="2" />
+            <Field Name="ReceiveTaskID" Type="Int32" />
+            <Field Name="ActivateTaskID" Type="Int32" />
+            <Field Name="Uninterruptable" Type="Int32" />
+            <MineMonsterGen Name="MineMonsterGen" Count="4" />
+            <MineAgroFaction Name="MineAgroFaction" />
+            <Field Name="Permanent" Type="Int32" />
+        </List>
+        <List Name="Identification Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Price" Type="Int32" />
+        </List>
+        <List Name="Fashion Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Fashion SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Mask" Type="Int32" />
+        </List>
+        <List Name="Fashions" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RealName" Type="String:32" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="EquipLocation" Type="Int32" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="DyeRequired" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="HeadData" Type="Int32" />
+            <Field Name="FaceData" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+            <Field Name="Action" Type="String:32" />
+        </List>
+        <List Name="Transfiguration Scroll Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Transfiguration Scroll SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Transfiguration Scrolls" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="FaceData" Type="String:128" />
+            <Field Name="Unsymmetrical" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Facepill Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Facepill SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Facepills" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Duration" Type="Int32" />
+            <Field Name="CameraScale" Type="Single" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Array Name="FaceData" Type="String:128" Length="20" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Equipment Sets" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="ItemCount" Type="Int32" />
+            <Array Name="Equipments" Type="Int32" Length="12" />
+            <Array Name="Bonuses" Type="Int32" Length="11" />
+            <Field Name="GFX" Type="String:128" />
+        </List>
+        <List Name="GM Generator Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="GM Generators" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Group" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="MonsterID" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Pet Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Pets" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="MaxPetLvl" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="PetSndType" Type="Int32" />
+            <Field Name="HPAlfa" Type="Single" />
+            <Field Name="HPBeta" Type="Single" />
+            <Field Name="HPGamma" Type="Single" />
+            <Field Name="HPGenAlfa" Type="Single" />
+            <Field Name="HPGenBeta" Type="Single" />
+            <Field Name="HPGenGamma" Type="Single" />
+            <Field Name="DamageAlpha" Type="Single" />
+            <Field Name="DamageBeta" Type="Single" />
+            <Field Name="DamageGamma" Type="Single" />
+            <Field Name="DmgDelta" Type="Single" />
+            <Field Name="SpeedAlpha" Type="Single" />
+            <Field Name="SpeedBeta" Type="Single" />
+            <Field Name="AttackAlpha" Type="Single" />
+            <Field Name="AttackBeta" Type="Single" />
+            <Field Name="AttackGamma" Type="Single" />
+            <Field Name="ArmorAlpha" Type="Single" />
+            <Field Name="ArmorBeta" Type="Single" />
+            <Field Name="ArmorGamma" Type="Single" />
+            <Field Name="PhysicalDefenseAlfa" Type="Single" />
+            <Field Name="PhysicalDefenseBeta" Type="Single" />
+            <Field Name="PhysicalDefenseGamma" Type="Single" />
+            <Field Name="PhysicalDefenseDelta" Type="Single" />
+            <Field Name="MagicalDefenseAlfa" Type="Single" />
+            <Field Name="MagicalDefenseBeta" Type="Single" />
+            <Field Name="MagicalDefenseGamma" Type="Single" />
+            <Field Name="MagicalDefenseDelta" Type="Single" />
+            <Field Name="MP" Type="Single" />
+            <Field Name="MPGen" Type="Single" />
+            <Field Name="AttackDegree" Type="Single" />
+            <Field Name="DefenceDegree" Type="Single" />
+            <Field Name="Size" Type="Single" />
+            <Field Name="DamageDelay" Type="Single" />
+            <Field Name="AttackRange" Type="Single" />
+            <Field Name="AttackSpeed" Type="Single" />
+            <Field Name="SightRange" Type="Int32" />
+            <Field Name="FoodType" Type="Int32" />
+            <Field Name="InhabitType" Type="Int32" />
+            <Field Name="StandMode" Type="Int32" />
+            <Field Name="PlantGroup" Type="Int32" />
+            <Field Name="GroupLimit" Type="Int32" />
+            <Field Name="ImmuneType" Type="Int32" />
+            <Field Name="PlayerGainSkill" Type="Int32" />
+            <Field Name="RequireDyeCount" Type="Int32" />
+        </List>
+        <List Name="Eggs" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="PetID" Type="Int32" />
+            <Field Name="IncubationCost" Type="Int32" />
+            <Field Name="RestoreCost" Type="Int32" />
+            <Field Name="Loyalty" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="PetExp" Type="Int32" />
+            <Field Name="PetSkillPoints" Type="Int32" />
+            <Skill Name="Skills" Count="32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Pet Foods" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="Loyalty" Type="Int32" />
+            <Field Name="Exp" Type="Int32" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Pet Transfigurations" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Fireworks" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="GFX" Type="String:128" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="TimeToFire" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Catapults" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <Junk2 />
+        <List Name="Towers" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <TowerBuildInfo Name="TowerBuildInfo" Count="4" />
+        </List>
+        <List Name="Exp Loss Tables" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="ExpLost" Type="Single" Length="256" />
+        </List>
+        <List Name="Reset Action Points" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <ResetPropEntry Name="ResetPropEntry" Count="15" />
+        </List>
+        <List Name="NPC Pet Rename Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+        </List>
+        <List Name="NPC Pet Skill Trainer Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="SkillIDs" Type="Int32" Length="128" />
+            <Field Name="DialogueID" Type="Int32" />
+        </List>
+        <List Name="NPC Forget Pet Skill Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+        </List>
+        <List Name="Medicines" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="BonusID" Type="Int32" />
+            <Field Name="BonusLvl" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Refining Orbs" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Tip" Type="UString:32" />
+            <Field Name="Safe" Type="Single" />
+            <Field Name="Chance" Type="Single" />
+            <Field Name="StaticChance" Type="Int32" />
+            <Array Name="SuccessProbability" Type="Single" Length="12" />
+            <Field Name="BindingOnly" Type="Int32" />
+            <Field Name="MaxItemGrade" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Destroying Bound Item Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Bind Item Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItem2" Type="Int32" />
+            <Field Name="RequiredItem3" Type="Int32" />
+            <Field Name="RequiredItem4" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+            <Field Name="BindType" Type="Int32" />
+        </List>
+        <List Name="NPC Item Destroy Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+        </List>
+        <List Name="NPC Cancel Item Destruction Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+        </List>
+        <List Name="Heaven Books" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Array Name="Bonuses" Type="Int32" Length="10" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="DecomposeToItem" Type="Int32" />
+            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Smilies" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SmileID" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="HP Hierograms" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Amount" Type="Int32" />
+            <Field Name="TriggerAmount" Type="Single" />
+            <Field Name="Cooldown" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="MP Hierograms" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Amount" Type="Int32" />
+            <Field Name="TriggerAmount" Type="Single" />
+            <Field Name="Cooldown" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Training Esotericas" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Duration" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Teleport Scrolls" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Dyes" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="MinHue" Type="Single" />
+            <Field Name="MaxHue" Type="Single" />
+            <Field Name="MinSaturation" Type="Single" />
+            <Field Name="MaxSaturation" Type="Single" />
+            <Field Name="MinValue" Type="Single" />
+            <Field Name="MaxValue" Type="Single" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Genies" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model1" Type="String:128" />
+            <Field Name="Model2" Type="String:128" />
+            <Field Name="Model3" Type="String:128" />
+            <Field Name="Model4" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon1" Type="String:128" />
+            <Field Name="Icon2" Type="String:128" />
+            <Field Name="Icon3" Type="String:128" />
+            <Field Name="Icon4" Type="String:128" />
+            <Field Name="ExpFactor" Type="Single" />
+            <Field Name="Str" Type="Int32" />
+            <Field Name="Dex" Type="Int32" />
+            <Field Name="Mag" Type="Int32" />
+            <Field Name="Vit" Type="Int32" />
+            <Field Name="MaxRefineLvl" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="SkillID1" Type="Int32" />
+            <Field Name="SkillID2" Type="Int32" />
+            <Field Name="SkillID3" Type="Int32" />
+            <Chance Name="LuckyPoints" Count="10" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Genie Armor Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Genie Armors" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Slot" Type="Int32" />
+            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="Str" Type="Int32" />
+            <Field Name="Dex" Type="Int32" />
+            <Field Name="Mag" Type="Int32" />
+            <Field Name="Vit" Type="Int32" />
+            <Field Name="Metal" Type="Int32" />
+            <Field Name="Wood" Type="Int32" />
+            <Field Name="Water" Type="Int32" />
+            <Field Name="Fire" Type="Int32" />
+            <Field Name="Earth" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Genie Exp Cubes" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Exp" Type="Int32" />
+            <Field Name="GenieLvl" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Vendor Licenses" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellSlotsCount" Type="Int32" />
+            <Field Name="BuySlotsCount" Type="Int32" />
+            <Field Name="MaxNameLength" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Skill Charms" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="UsePerTimeCount" Type="Int32" />
+            <Field Name="WorldsCount" Type="Int32" />
+            <Array Name="WorldIDs" ElementName="WorldID" Type="Int32" Length="10" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="UseInCombat" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Wards" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Upgrade Production Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="NumRefines" ElementName="Count" Type="Int32" Length="12" />
+            <NumWeapon Name="NumWeapons" Count="2" />
+            <NumArmor Name="NumArmors" Count="4" />
+            <Array Name="NumStones" ElementName="Count" Type="Int32" Length="20" />
+        </List>
+        <List Name="Account Storage BlackList Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="BlackList" Type="Int32" Length="512" />
+        </List>
+        <List Name="Face Hair Texture Maps" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <TextureMap Name="Texture Map" Count="128" />
+        </List>
+        <List Name="Multi Exp Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <ExpConfig Name="Config" Count="20" />
+        </List>
+        <List Name="Craft Enchantments" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillLevel" Type="Int32" />
+            <Field Name="Rate" Type="Single" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Convertible Skills Lists" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="SkillIDs" Type="Int32" Length="256" />
+        </List>
+        <List Name="Wedding Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <TimePeriod Name="Wedding Times" Count="10" />
+            <Date Name="Wedding Dates" Count="20" />
+            <Location Name="Wedding Locations" Count="10" />
+        </List>
+        <List Name="Queuing Proofs" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Year" Type="Int32" />
+            <Field Name="Month" Type="Int32" />
+            <Field Name="Day" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Wedding Cards" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Runes" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="Mask" Type="Int32" />
+            <Field Name="BonusID1" Type="Int32" />
+            <Field Name="BonusID2" Type="Int32" />
+            <Field Name="BonusID3" Type="Int32" />
+            <Field Name="Duration" Type="Int32" />
+            <Field Name="GFXIndex" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Eyes of Gods" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="GFX" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="ClassMask" Type="Int32" />
+            <Field Name="Sex" Type="Int32" />
+            <Field Name="FacePillOnly" Type="Int32" />
+        </List>
+        <List Name="Guild Base Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="GuildLvlRequired" Type="Int32" />
+            <Matter Name="Require Items" Count="8" />
+            <GuildBaseLevel Name="Levels" Count="50" />
+            <Array Name="KirinLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="TortoiseLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="TigerLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="PhoenixLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="DragonLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="InitBuildings" ElementName="InitBuildingID" Type="Int32" Length="20" />
+            <Array Name="Controllers" ElementName="ControllerID" Type="Int32" Length="100" />
+            <CommonValue Name="CommonValues" Count="100" />
+        </List>
+        <List Name="Guild Base Construction Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Guild Base Constructions" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="BaseLvlRequired" Type="Int32" />
+            <Field Name="TortoiseLvlRequired" Type="Int32" />
+            <Field Name="DragonLvlRequired" Type="Int32" />
+            <Field Name="KirinLvlRequired" Type="Int32" />
+            <Field Name="PhoenixLvlRequired" Type="Int32" />
+            <Field Name="TigerLvlRequired" Type="Int32" />
+            <Field Name="Money" Type="Int32" />
+            <Field Name="Steel" Type="Int32" />
+            <Field Name="Sand" Type="Int32" />
+            <Field Name="Stone" Type="Int32" />
+            <Field Name="Water" Type="Int32" />
+            <Field Name="Wood" Type="Int32" />
+            <Field Name="Material6" Type="Int32" />
+            <Field Name="Material7" Type="Int32" />
+            <Field Name="Material8" Type="Int32" />
+            <Field Name="BaseTime" Type="Int32" />
+            <Field Name="DeltaTime" Type="Int32" />
+            <Field Name="ControllerId0" Type="Int32" />
+            <Field Name="ControllerId1" Type="Int32" />
+        </List>
+        <List Name="Guild Materials Packs" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="EthersteelCount" Type="Int32" />
+            <Field Name="LostSandCount" Type="Int32" />
+            <Field Name="PlumePuffCount" Type="Int32" />
+            <Field Name="RagingFlaskCount" Type="Int32" />
+            <Field Name="TellusWoodCount" Type="Int32" />
+            <Field Name="Material6Count" Type="Int32" />
+            <Field Name="Material7Count" Type="Int32" />
+            <Field Name="Material8Count" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Teleport Signets" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Model" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Type" Type="Int32" />
+            <AreaLimits Name="AreasLimits" ElementName="AreaLimits" Count="8" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Engraving Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Engraving SubTypes" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="Engravings" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="SubType" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Icon" Type="String:128" />
+            <Field Name="Grade" Type="Int32" />
+            <Field Name="Mask" Type="Int32" />
+            <ValueRangeInt Name="ItemGrade" />
+            <Field Name="Duration" Type="Int32" />
+            <Matter Name="Material" Count="8" />
+            <Array Name="BonusChances" Type="Single" Length="4" />
+            <Chance Name="Bonuses" Count="32" />
+        </List>
+        <List Name="Engraving Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="EngravingIDs" Type="Int32" Length="16" />
+        </List>
+        <List Name="RandDrop Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <RandDropData Name="Data" Count="8" />
+        </List>
+        <List Name="RandDrop Types" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+        </List>
+        <List Name="RandDrops" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Type" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
+            <Field Name="Duration" Type="Int32" />
+            <Array Name="Items" Type="Int32" Length="32" />
+            <Matter Name="Require" Count="8" />
+        </List>
+        <List Name="Wiki Taboo Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="Essences" ElementName="ItemID" Type="Int32" Length="512" />
+            <Array Name="Recipes" ElementName="RecipeID" Type="Int32" Length="128" />
+            <Array Name="Tasks" ElementName="TaskID" Type="Int32" Length="512" />
+            <Array Name="Skills" ElementName="SkillID" Type="Int32" Length="128" />
+        </List>
+        <List Name="Force Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="Surface" Type="String:128" />
+            <Field Name="Color" Type="Single" />
+            <Field Name="Text" Type="UString:512" />
+            <Field Name="MaxPrestige" Type="Int32" />
+            <Field Name="MaxInfluence" Type="Int32" />
+            <Field Name="JoinMoneyCost" Type="Int32" />
+            <Field Name="JoinItemCost" Type="Int32" />
+            <Field Name="QuitPrestigeCost" Type="Int32" />
+            <Field Name="QuitInfluenceCost" Type="Int32" />
+        </List>
+        <List Name="Force Token Essences" Interface="IElementTradableItemRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:192" />
+            <Field Name="Surface" Type="String:128" />
+            <Field Name="RequireForceID" Type="Int32" />
+            <Field Name="PrestigeAdd" Type="Int32" />
+            <Field Name="InfluenceRatio" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Npc Force Services" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="ForceID" Type="Int32" />
+        </List>
+        <List Name="Player Death Drop Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Array Name="Items" ElementName="ItemID" Type="Int32" Length="256" />
+        </List>
+        <List Name="Dyn Skill Equip Essences" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:192" />
+            <Field Name="Surface" Type="String:128" />
+            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SellPrice" Type="Int32" />
+            <Field Name="BuyPrice" Type="Int32" />
+            <Field Name="MaxCount" Type="Int32" />
+            <Field Name="HasGuid" Type="Int32" />
+            <Field Name="ProcType" Type="Int32" />
+        </List>
+        <List Name="Consume Points Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <ConsumePoint Name="Points" Count="1024" />
+        </List>
+        <List Name="Online Awards Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Field Name="MaxTime" Type="Int32" />
+            <AwardChoice Name="AwardChoices" Count="4" />
+        </List>
+        <List Name="Country Configs" Interface="IElementsRecord">
+            <Field Name="ID" Type="Int32" />
+            <Field Name="Name" Type="UString:64" />
+            <Country Name="Countries" ElementName="Country" Count="4" />
+            <Array Name="FlagControllerIDs" ElementName="ID" Type="Int32" Length="3" />
+            <Field Name="FlagMineID" Type="Int32" />
+            <Array Name="AttackFlagGoal" ElementName="Point" Type="Single" Length="3" />
+            <Field Name="AttackFlagGoalRadius" Type="Single" />
+            <Array Name="DefenceFlagGoal" ElementName="Point" Type="Single" Length="3" />
+            <Field Name="DefenceFlagGoalRadius" Type="Single" />
+        </List>
+    </File>
+</ElementsData>
