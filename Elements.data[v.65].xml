@@ -1571,15 +1571,15 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="Slot" Type="Int32" />
             <Field Name="RequiredGenieLevel" Type="Int32" />
-            <Field Name="Strength" Type="Int32" />
-            <Field Name="Dexterity" Type="Int32" />
-            <Field Name="Magic" Type="Int32" />
-            <Field Name="Vitality" Type="Int32" />
-            <Field Name="Metal" Type="Int32" />
-            <Field Name="Wood" Type="Int32" />
-            <Field Name="Water" Type="Int32" />
-            <Field Name="Fire" Type="Int32" />
-            <Field Name="Earth" Type="Int32" />
+            <Field Name="StrengthBonus" Type="Int32" />
+            <Field Name="DexterityBonus" Type="Int32" />
+            <Field Name="MagicBonus" Type="Int32" />
+            <Field Name="VitalityBonus" Type="Int32" />
+            <Field Name="MetalBonus" Type="Int32" />
+            <Field Name="WoodBonus" Type="Int32" />
+            <Field Name="WaterBonus" Type="Int32" />
+            <Field Name="FireBonus" Type="Int32" />
+            <Field Name="EarthBonus" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
