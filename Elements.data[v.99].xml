@@ -259,6 +259,11 @@
             <Field Name="RequireItem" Type="Int32" />
             <Field Name="ExpPromote" Type="Single" />
         </Struct>
+        <Struct Name="Location">
+            <Field Name="PosX" Type="Single" />
+            <Field Name="PosZ" Type="Single" />
+            <Field Name="PosY" Type="Single" />
+        </Struct>
     </Structs>
     <File>
         <Field Name="Version" Type="Int32" />
@@ -2218,29 +2223,27 @@
             <Array Name="Stages" ElementName="Id" Type="Int32" Length="32" />
         </List>
         <List Name="AutoTeam Essences" Interface="IElementsRecord">
-            <Field Name="ID" Type="Int32" />
+            <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Description" Type="UString:512" />
             <Field Name="Type" Type="Int32" />
             <ValueRangeInt Name="RequiredLvl" />
-            <ValueRangeInt Name="RequiredMaxLvl" />
-            <Field Name="RequiredSex" Type="Int32" />
-            <ValueRangeInt Name="RequiredNum" />
+            <Field Name="RequireGender" Type="Int32" />
+            <ValueRangeInt Name="RequiredPartyMembers" />
             <Array Name="NumProf" Type="Int32" Length="10" />
             <Field Name="RequiredLvl2" Type="Int32" />
-            <ValueRangeInt Name="RequiredReincarnationTimes" />
-            <ValueRangeInt Name="RequiredRealmLevel" />
+            <Field Name="Unknown" Type="Int32" />
             <Field Name="RequiredSoulPower" Type="Int32" />
-            <Field Name="WorldID" Type="Int32" />
-            <Array Name="TransPos" Type="Single" Length="3" />
+            <Field Name="WorldId" Type="Int32" />
+            <Location Name="EventLocation" Count="1" />
             <Array Name="WorldIDFrom" Type="Int32" Length="32" />
             <Field Name="CombinedSwitch" Type="Int32" />
             <Field Name="TimeType" Type="Int32" />
             <Field Name="Week" Type="Int32" />
-            <Array Name="Day" Type="Int32" Length="6" />
-            <Array Name="DayTime" Type="Int32" Length="4" />
-            <Array Name="Award" Type="Int32" Length="3" />
+            <Date Name="EventDate" Count="2" />
+            <TimePeriod Name="EventTime" Count="1" />
+            <Array Name="Award" ElementName="ItemId" Type="Int32" Length="3" />
         </List>
     </File>
 </ElementsData>
