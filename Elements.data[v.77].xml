@@ -777,7 +777,7 @@
             <Field Name="BuildingId" Type="Int32" />
             <Field Name="CombinedSwitch" Type="Int32" />
             <Field Name="HPAdjust" Type="Int32" />
-            <Field Name="DefAdjust" Type="Int32" />
+            <Field Name="DefenceAdjust" Type="Int32" />
             <Field Name="AttackAdjust" Type="Int32" />
             <Field Name="MaxMoveRange" Type="Single" />
             <Field Name="DropForNoProfitTime" Type="Int32" />
@@ -1067,8 +1067,8 @@
             <Field Name="MPLevelUp" Type="Int32" />
             <Field Name="PAttackLevelUp" Type="Single" />
             <Field Name="MAttackLevelUp" Type="Single" />
-            <Field Name="PDefLevelUp" Type="Int32" />
-            <Field Name="MDefLevelUp" Type="Int32" />
+            <Field Name="PDefenceLevelUp" Type="Int32" />
+            <Field Name="MDefenceLevelUp" Type="Int32" />
             <Field Name="AgroIncrease" Type="Int32" />
         </List>
         <List Name="Param Adjust Configs" Interface="IElementsRecord">
