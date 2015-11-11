@@ -882,8 +882,7 @@
             <Field Name="StorageOpenItem" Type="Int32" />
             <Field Name="StorageRefreshItem" Type="Int32" />
             <Field Name="StorageRefreshPerDay" Type="Int32" />
-            <Field Name="StorageRefreshCountMin" Type="Int32" />
-            <Field Name="StorageRefreshCountMax" Type="Int32" />
+            <ValueRangeInt Name="StorageRefreshCount" />
             <Field Name="StorageDeliverPerDay" Type="Int32" />
             <Array Name="Tasks" ElementName="TaskID" Type="Int32" Length="256" />
         </List>
@@ -2236,13 +2235,13 @@
             <Field Name="Unknown" Type="Int32" />
             <Field Name="RequiredSoulPower" Type="Int32" />
             <Field Name="WorldId" Type="Int32" />
-            <Location Name="EventLocation" Count="1" />
+            <Location Name="EventLocation" />
             <Array Name="WorldIDFrom" Type="Int32" Length="32" />
             <Field Name="CombinedSwitch" Type="Int32" />
             <Field Name="TimeType" Type="Int32" />
             <Field Name="Week" Type="Int32" />
             <Date Name="EventDate" Count="2" />
-            <TimePeriod Name="EventTime" Count="1" />
+            <TimePeriod Name="EventTime" />
             <Array Name="Award" ElementName="ItemId" Type="Int32" Length="3" />
         </List>
     </File>

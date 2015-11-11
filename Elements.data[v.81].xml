@@ -843,8 +843,7 @@
             <Field Name="StorageOpenItem" Type="Int32" />
             <Field Name="StorageRefreshItem" Type="Int32" />
             <Field Name="StorageRefreshPerDay" Type="Int32" />
-            <Field Name="StorageRefreshCountMin" Type="Int32" />
-            <Field Name="StorageRefreshCountMax" Type="Int32" />
+            <ValueRangeInt Name="StorageRefreshCount" />
             <Field Name="StorageDeliverPerDay" Type="Int32" />
             <Array Name="Tasks" ElementName="TaskID" Type="Int32" Length="256" />
         </List>
