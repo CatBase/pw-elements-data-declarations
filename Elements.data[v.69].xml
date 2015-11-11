@@ -355,7 +355,7 @@
             <ValueRangeInt Name="MagicalDefenseWater" />
             <ValueRangeInt Name="MagicalDefenseFire" />
             <ValueRangeInt Name="MagicalDefenseEarth" />
-            <ValueRangeInt Name="Evasion" />
+            <ValueRangeInt Name="EvasionBonus" />
             <ValueRangeInt Name="Durability" />
             <Field Name="RefineId" Type="Int32" />
             <Field Name="RefineMaterialAmount" Type="Int32" />
