@@ -1598,12 +1598,9 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="MinHue" Type="Single" />
-            <Field Name="MaxHue" Type="Single" />
-            <Field Name="MinSaturation" Type="Single" />
-            <Field Name="MaxSaturation" Type="Single" />
-            <Field Name="MinValue" Type="Single" />
-            <Field Name="MaxValue" Type="Single" />
+            <ValueRangeSingle Name="H" />
+            <ValueRangeSingle Name="S" />
+            <ValueRangeSingle Name="V" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
