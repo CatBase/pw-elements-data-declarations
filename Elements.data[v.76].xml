@@ -33,13 +33,13 @@
             <Field Name="Earth" Type="Int32" />
         </Struct>
         <Struct Name="Junk1">
-            <Field Name="Unk" Type="Int32" />
+            <Field Name="Unknown" Type="Int32" />
             <Field Name="Size" Type="Int32" />
             <Field Name="Bytes" Type="Bytes:%Size%" />
             <Field Name="Unk1" Type="Int32" />
         </Struct>
         <Struct Name="Junk2">
-            <Field Name="Unk" Type="Int32" />
+            <Field Name="Unknown" Type="Int32" />
             <Field Name="Size" Type="Int32" />
             <Field Name="Bytes" Type="Bytes:%Size%" />
         </Struct>
@@ -1737,7 +1737,7 @@
             <Field Name="Name" Type="UString:64" />
             <TimePeriod Name="Times" Count="10" />
             <Date Name="Dates" Count="20" />
-            <Place Name="Places" Count="20" />
+            <Place Name="Places" Count="10" />
         </List>
         <List Name="Queuing Proofs" Interface="IElementTradableItemRecord">
             <Field Name="ID" Type="Int32" />
