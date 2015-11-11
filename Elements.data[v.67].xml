@@ -1884,7 +1884,7 @@
             <Field Name="MaxInfluence" Type="Int32" />
             <Field Name="JoinPrice" Type="Int32" />
             <Field Name="JoinItemCost" Type="Int32" />
-            <Field Name="QuitPrestigeCost" Type="Int32" />
+            <Field Name="QuitPrestigeLoss" Type="Int32" />
             <Field Name="QuitInfluenceCost" Type="Int32" />
         </List>
         <List Name="Order Token" Interface="IElementTradableItemRecord">
