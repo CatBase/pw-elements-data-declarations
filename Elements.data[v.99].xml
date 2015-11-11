@@ -399,7 +399,7 @@
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
-            <Field Name="ForceAllMDef" Type="Int32" />
+            <Field Name="ForceAllMagicDefences" Type="Int32" />
         </List>
         <List Name="Decoration Types" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
