@@ -49,7 +49,7 @@
         </Struct>
         <Struct Name="StockPage">
             <Field Name="Label" Type="UString:16" />
-            <Field Name="RequiredContribPoints" Type="Int32" />
+            <Field Name="RequiredContributionPoints" Type="Int32" />
             <StockItem Name="Items" Count="32" />
         </Struct>
         <Struct Name="Matter">
