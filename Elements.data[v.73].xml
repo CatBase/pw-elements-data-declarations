@@ -254,7 +254,7 @@
             <Field Name="UniqueAddonChance" Type="Single" />
             <Chance Name="DropBonuses" Count="32" />
             <Chance Name="CraftBonuses" Count="32" />
-            <Chance Name="Uniques" Count="16" />
+            <Chance Name="UniqueBonuses" Count="16" />
             <ValueRangeInt Name="DropDurability" />
             <Field Name="DecomposePrice" Type="Int32" />
             <Field Name="DecomposeTime" Type="Int32" />
