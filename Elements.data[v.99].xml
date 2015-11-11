@@ -16,14 +16,13 @@
             <Field Name="Count" Type="Int32" />
             <Field Name="Chance" Type="Single" />
         </Struct>
-        <Struct Name="SkillChance">
-            <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLevel" Type="Int32" />
-            <Field Name="Chance" Type="Single" />
-        </Struct>
         <Struct Name="Skill">
             <Field Name="Id" Type="Int32" />
             <Field Name="Level" Type="Int32" />
+        </Struct>
+        <Struct Name="SkillChance">
+            <Skill Name="Skill" />
+            <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="MagicElements">
             <Field Name="Metal" Type="Int32" />
@@ -794,8 +793,7 @@
             <Field Name="AttackRange" Type="Single" />
             <Field Name="AttackSpeed" Type="Single" />
             <ValueRangeInt Name="MagicalAttack" />
-            <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLevel" Type="Int32" />
+            <Skill Name="Skill" />
             <Field Name="HPRegen" Type="Int32" />
             <Field Name="AggroMode" Type="Int32" />
             <Field Name="FactionAskHelp" Type="Int32" />
@@ -1083,8 +1081,7 @@
             <Field Name="SubType" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLevel" Type="Int32" />
+            <Skill Name="Skill" />
             <Field Name="BindType" Type="Int32" />
             <Chance Name="Targets" Count="4" />
             <Field Name="FailureChance" Type="Single" />
@@ -1751,8 +1748,7 @@
             <Field Name="UsePerTimeCount" Type="Int32" />
             <Field Name="WorldsCount" Type="Int32" />
             <Array Name="WorldIds" ElementName="WorldId" Type="Int32" Length="10" />
-            <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLevel" Type="Int32" />
+            <Skill Name="Skill" />
             <Field Name="UseInCombat" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1800,8 +1796,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLevel" Type="Int32" />
+            <Skill Name="Skill" />
             <Field Name="Rate" Type="Single" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1990,8 +1985,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Type" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLevel" Type="Int32" />
+            <Skill Name="Skill" />
             <Field Name="Price" Type="Int32" />
             <Field Name="Duration" Type="Int32" />
             <Array Name="Items" Type="Int32" Length="32" />
