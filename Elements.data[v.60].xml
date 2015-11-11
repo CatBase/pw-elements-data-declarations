@@ -53,7 +53,7 @@
         </Struct>
         <Struct Name="Matter">
             <Field Name="ItemId" Type="Int32" />
-            <Field Name="Count" Type="Int32" />
+            <Field Name="ItemAmount" Type="Int32" />
         </Struct>
         <Struct Name="Task">
             <Field Name="TaskId" Type="Int32" />
