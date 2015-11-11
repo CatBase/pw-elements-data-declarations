@@ -237,7 +237,7 @@
             <Field Name="DecomposePrice" Type="Int32" />
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
-            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="DecomposeItemAmount" Type="Int32" />
             <Field Name="ShatterToItem" Type="Int32" />
             <Field Name="ShatterItemCount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -295,7 +295,7 @@
             <Field Name="DecomposePrice" Type="Int32" />
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
-            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="DecomposeItemAmount" Type="Int32" />
             <Field Name="ShatterToItem" Type="Int32" />
             <Field Name="ShatterItemCount" Type="Int32" />
             <Field Name="HairStyle" Type="Int32" />
@@ -353,7 +353,7 @@
             <Field Name="DecomposePrice" Type="Int32" />
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
-            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="DecomposeItemAmount" Type="Int32" />
             <Field Name="ShatterToItem" Type="Int32" />
             <Field Name="ShatterItemCount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -407,7 +407,7 @@
             <Field Name="DecomposePrice" Type="Int32" />
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
-            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="DecomposeItemAmount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
@@ -487,7 +487,7 @@
             <Field Name="TypeId" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
-            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="DecomposeItemAmount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
@@ -1443,7 +1443,7 @@
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
-            <Field Name="DecomposeItemCount" Type="Int32" />
+            <Field Name="DecomposeItemAmount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
