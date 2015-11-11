@@ -150,8 +150,8 @@
             <Field Name="Month" Type="Int32" />
             <Field Name="Day" Type="Int32" />
         </Struct>
-        <Struct Name="Location">
-            <Field Name="WorldId" Type="UString:32" />
+         <Struct Name="Place">
+            <Field Name="Name" Type="UString:32" />
             <Field Name="PosX" Type="Single" />
             <Field Name="PosZ" Type="Single" />
             <Field Name="PosY" Type="Single" />
@@ -1689,9 +1689,9 @@
         <List Name="Wedding Configs" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <TimePeriod Name="Wedding Times" Count="10" />
-            <Date Name="Wedding Dates" Count="20" />
-            <Location Name="Wedding Locations" Count="10" />
+            <TimePeriod Name="Times" Count="10" />
+            <Date Name="Dates" Count="20" />
+            <Place Name="Places" Count="20" />
         </List>
         <List Name="Queuing Proofs" Interface="IElementTradableItemRecord">
             <Field Name="ID" Type="Int32" />
