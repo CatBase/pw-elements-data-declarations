@@ -249,10 +249,10 @@
             <Field Name="ModelLeft" Type="String:128" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="RequiredStr" Type="Int32" />
-            <Field Name="RequiredAgi" Type="Int32" />
-            <Field Name="RequiredInt" Type="Int32" />
-            <Field Name="RequiredVit" Type="Int32" />
+            <Field Name="RequiredStrength" Type="Int32" />
+            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredIntelligence" Type="Int32" />
+            <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="RequiredReputation" Type="Int32" />
@@ -307,10 +307,10 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="RequiredStr" Type="Int32" />
-            <Field Name="RequiredAgi" Type="Int32" />
-            <Field Name="RequiredInt" Type="Int32" />
-            <Field Name="RequiredVit" Type="Int32" />
+            <Field Name="RequiredStrength" Type="Int32" />
+            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredIntelligence" Type="Int32" />
+            <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="RequiredReputation" Type="Int32" />
@@ -367,10 +367,10 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="RequiredStr" Type="Int32" />
-            <Field Name="RequiredAgi" Type="Int32" />
-            <Field Name="RequiredInt" Type="Int32" />
-            <Field Name="RequiredVit" Type="Int32" />
+            <Field Name="RequiredStrength" Type="Int32" />
+            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredIntelligence" Type="Int32" />
+            <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="RequiredReputation" Type="Int32" />
@@ -618,8 +618,8 @@
             <Field Name="GFX1" Type="String:128" />
             <Field Name="GFX2" Type="String:128" />
             <Field Name="SFX" Type="String:128" />
-            <Field Name="RequiredStr" Type="Int32" />
-            <Field Name="RequiredAgi" Type="Int32" />
+            <Field Name="RequiredStrength" Type="Int32" />
+            <Field Name="RequiredAgility" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
             <ValueRangeInt Name="MaxPhysicalAttack" />
@@ -1059,10 +1059,10 @@
             <Field Name="SwimSpeed" Type="Single" />
             <Field Name="FlySpeed" Type="Single" />
             <Field Name="CritRate" Type="Int32" />
-            <Field Name="HPxVit" Type="Int32" />
-            <Field Name="MPxInt" Type="Int32" />
-            <Field Name="AccuracyxAgi" Type="Int32" />
-            <Field Name="EvasionxAgi" Type="Int32" />
+            <Field Name="HPxVitality" Type="Int32" />
+            <Field Name="MPxIntelligence" Type="Int32" />
+            <Field Name="AccuracyxAgility" Type="Int32" />
+            <Field Name="EvasionxAgility" Type="Int32" />
             <Field Name="HPLevelUp" Type="Int32" />
             <Field Name="MPLevelUp" Type="Int32" />
             <Field Name="PAtkLevelUp" Type="Single" />
@@ -1602,10 +1602,10 @@
             <Field Name="Icon3" Type="String:128" />
             <Field Name="Icon4" Type="String:128" />
             <Field Name="ExpFactor" Type="Single" />
-            <Field Name="Str" Type="Int32" />
-            <Field Name="Dex" Type="Int32" />
-            <Field Name="Mag" Type="Int32" />
-            <Field Name="Vit" Type="Int32" />
+            <Field Name="Strength" Type="Int32" />
+            <Field Name="Dexterity" Type="Int32" />
+            <Field Name="Magic" Type="Int32" />
+            <Field Name="Vitality" Type="Int32" />
             <Field Name="MaxRefineLevel" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1629,10 +1629,10 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="Slot" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="Str" Type="Int32" />
-            <Field Name="Dex" Type="Int32" />
-            <Field Name="Mag" Type="Int32" />
-            <Field Name="Vit" Type="Int32" />
+            <Field Name="Strength" Type="Int32" />
+            <Field Name="Dexterity" Type="Int32" />
+            <Field Name="Magic" Type="Int32" />
+            <Field Name="Vitality" Type="Int32" />
             <Field Name="Metal" Type="Int32" />
             <Field Name="Wood" Type="Int32" />
             <Field Name="Water" Type="Int32" />
