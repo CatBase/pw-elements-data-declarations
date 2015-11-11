@@ -9,17 +9,17 @@
             <Field Name="Max" Type="Single" />
         </Struct>
         <Struct Name="Chance">
-            <Field Name="ID" Type="Int32" />
-            <Field Name="Percent" Type="Single" />
+            <Field Name="Id" Type="Int32" />
+            <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="AmountChance">
             <Field Name="Count" Type="Int32" />
-            <Field Name="Percent" Type="Single" />
+            <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="SkillChance">
             <Field Name="SkillID" Type="Int32" />
             <Field Name="SkillLevel" Type="Int32" />
-            <Field Name="Percent" Type="Single" />
+            <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="Skill">
             <Field Name="ID" Type="Int32" />
