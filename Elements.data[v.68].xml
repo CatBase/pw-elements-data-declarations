@@ -1783,12 +1783,12 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="BaseRequiredLevel" Type="Int32" />
-            <Field Name="TortoiseRequiredLevel" Type="Int32" />
-            <Field Name="DragonRequiredLevel" Type="Int32" />
-            <Field Name="KirinRequiredLevel" Type="Int32" />
-            <Field Name="PhoenixRequiredLevel" Type="Int32" />
-            <Field Name="TigerRequiredLevel" Type="Int32" />
+            <Field Name="RequiredBaseLevel" Type="Int32" />
+            <Field Name="RequiredTortoiseLevel" Type="Int32" />
+            <Field Name="RequiredDragonLevel" Type="Int32" />
+            <Field Name="RequiredKirinLevel" Type="Int32" />
+            <Field Name="RequiredPhoenixLevel" Type="Int32" />
+            <Field Name="RequiredTigerLevel" Type="Int32" />
             <Field Name="Money" Type="Int32" />
             <Field Name="Steel" Type="Int32" />
             <Field Name="Sand" Type="Int32" />
