@@ -997,7 +997,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="VisualizeId" Type="Int32" />
             <Field Name="UserData" Type="Int32" />
             <Field Name="FacepillOnly" Type="Int32" />
@@ -1010,7 +1010,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="VisualizeId" Type="Int32" />
             <Field Name="UserData" Type="Int32" />
             <Field Name="FacepillOnly" Type="Int32" />
@@ -1026,7 +1026,7 @@
             <Field Name="FaceData" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="EmotionId" Type="Int32" />
         </List>
         <List Name="Hears" Interface="IElementsRecord">
@@ -1036,7 +1036,7 @@
             <Field Name="FaceData2" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="VisualizeId" Type="Int32" />
             <Field Name="UserData" Type="Int32" />
             <Field Name="FacepillOnly" Type="Int32" />
@@ -1047,7 +1047,7 @@
             <Field Name="FaceData" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="VisualizeId" Type="Int32" />
             <Field Name="FacepillOnly" Type="Int32" />
         </List>
@@ -1057,7 +1057,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
         </List>
         <List Name="Character Templates" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
@@ -1065,7 +1065,7 @@
             <Field Name="FaceData" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
         </List>
         <List Name="Recipe Types" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
@@ -1177,7 +1177,7 @@
             <Field Name="FaceData" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="VisualizeId" Type="Int32" />
             <Field Name="FacepillOnly" Type="Int32" />
         </List>
@@ -1244,7 +1244,7 @@
             <Field Name="RequiredDye" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="HeadData" Type="Int32" />
             <Field Name="FaceData" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -1865,7 +1865,7 @@
             <Field Name="GFX" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="Sex" Type="Int32" />
+            <Field Name="SexId" Type="Int32" />
             <Field Name="FacePillOnly" Type="Int32" />
         </List>
         <List Name="Guild Base Configs" Interface="IElementsRecord">
