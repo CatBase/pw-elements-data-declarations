@@ -1302,7 +1302,7 @@
             <Field Name="DamageAlpha" Type="Single" />
             <Field Name="DamageBeta" Type="Single" />
             <Field Name="DamageGamma" Type="Single" />
-            <Field Name="DmgDelta" Type="Single" />
+            <Field Name="DamageDelta" Type="Single" />
             <Field Name="SpeedAlpha" Type="Single" />
             <Field Name="SpeedBeta" Type="Single" />
             <Field Name="AttackAlpha" Type="Single" />
