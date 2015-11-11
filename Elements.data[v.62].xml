@@ -66,7 +66,7 @@
         <Struct Name="Teleport">
             <Field Name="TeleportId" Type="Int32" />
             <Field Name="Price" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
         </Struct>
         <Struct Name="RecipePage">
             <Field Name="Label" Type="UString:16" />
@@ -86,7 +86,7 @@
             <TalkProcOption Name="Options" Count="%NumOptions%" />
         </Struct>
         <Struct Name="LevelDiffAdjust">
-            <Field Name="LvlDiff" Type="Int32" />
+            <Field Name="LevelDiff" Type="Int32" />
             <Field Name="AdjustExp" Type="Single" />
             <Field Name="AdjustSp" Type="Single" />
             <Field Name="AdjustMoney" Type="Single" />
@@ -211,7 +211,7 @@
             <Field Name="IntRequired" Type="Int32" />
             <Field Name="VitRequired" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="LvlRequired" Type="Int32" />
+            <Field Name="LevelRequired" Type="Int32" />
             <Field Name="ReputationRequired" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
@@ -269,7 +269,7 @@
             <Field Name="IntRequired" Type="Int32" />
             <Field Name="VitRequired" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="LvlRequired" Type="Int32" />
+            <Field Name="LevelRequired" Type="Int32" />
             <Field Name="ReputationRequired" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalDefense" />
@@ -329,7 +329,7 @@
             <Field Name="IntRequired" Type="Int32" />
             <Field Name="VitRequired" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="LvlRequired" Type="Int32" />
+            <Field Name="LevelRequired" Type="Int32" />
             <Field Name="ReputationRequired" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalAttack" />
@@ -376,7 +376,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="Delay" Type="Int32" />
             <Field Name="RestoreHP" Type="Int32" />
             <Field Name="OverTimeHP" Type="Int32" />
@@ -426,7 +426,7 @@
             <Field Name="CharmType" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <ValueRangeInt Name="RequiredLvl" />
+            <ValueRangeInt Name="RequiredLevel" />
             <Field Name="AttackEnhancement" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
@@ -447,7 +447,7 @@
             <Field Name="CharmType" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <ValueRangeInt Name="RequiredLvl" />
+            <ValueRangeInt Name="RequiredLevel" />
             <Field Name="ReduceDamage" Type="Single" />
             <Field Name="OverTime" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -480,7 +480,7 @@
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <ValueRangeSingle Name="Speed" />
             <ValueRangeSingle Name="RushSpeed" />
             <ValueRangeSingle Name="Energy" />
@@ -501,7 +501,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="SpeedIncrease" Type="Single" />
             <Field Name="MPLaunch" Type="Int32" />
             <Field Name="MPPerSec" Type="Int32" />
@@ -577,7 +577,7 @@
             <Field Name="SFX" Type="String:128" />
             <Field Name="StrRequired" Type="Int32" />
             <Field Name="AgiRequired" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
             <ValueRangeInt Name="MaxPhysicalAttack" />
             <Field Name="AtkDelay" Type="Single" />
@@ -674,8 +674,8 @@
             <Field Name="AttackDelay" Type="Single" />
             <Field Name="StrategyId" Type="Int32" />
             <Field Name="RoleInWar" Type="Int32" />
-            <Field Name="Lvl" Type="Int32" />
-            <Field Name="PowerLvl" Type="Int32" />
+            <Field Name="Level" Type="Int32" />
+            <Field Name="PowerLevel" Type="Int32" />
             <Field Name="EggId" Type="Int32" />
             <Field Name="HP" Type="Int32" />
             <Field Name="PhysicalDefense" Type="Int32" />
@@ -699,7 +699,7 @@
             <Field Name="AttackSpeed" Type="Single" />
             <ValueRangeInt Name="MagicalAttack" />
             <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="SkillLevel" Type="Int32" />
             <Field Name="HPRegen" Type="Int32" />
             <Field Name="AggroMode" Type="Int32" />
             <Field Name="FactionAskHelp" Type="Int32" />
@@ -982,7 +982,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="SkillLevel" Type="Int32" />
             <Field Name="BindType" Type="Int32" />
             <Chance Name="Targets" Count="4" />
             <Field Name="FailureChance" Type="Single" />
@@ -1020,12 +1020,12 @@
             <Field Name="MPxInt" Type="Int32" />
             <Field Name="AccuracyxAgi" Type="Int32" />
             <Field Name="EvasionxAgi" Type="Int32" />
-            <Field Name="HPLvlUp" Type="Int32" />
-            <Field Name="MPLvlUp" Type="Int32" />
-            <Field Name="PAtkLvlUp" Type="Single" />
-            <Field Name="MAtkLvlUp" Type="Single" />
-            <Field Name="PDefLvlUp" Type="Int32" />
-            <Field Name="MDefLvlUp" Type="Int32" />
+            <Field Name="HPLevelUp" Type="Int32" />
+            <Field Name="MPLevelUp" Type="Int32" />
+            <Field Name="PAtkLevelUp" Type="Single" />
+            <Field Name="MAtkLevelUp" Type="Single" />
+            <Field Name="PDefLevelUp" Type="Int32" />
+            <Field Name="MDefLevelUp" Type="Int32" />
             <Field Name="AgroIncrease" Type="Int32" />
         </List>
         <List Name="Param Adjust Configs" Interface="IElementsRecord">
@@ -1091,7 +1091,7 @@
             <Field Name="Type" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="RequiredItem" Type="Int32" />
             <Field Name="EliminateTool" Type="Int32" />
             <ValueRangeInt Name="MineTime" />
@@ -1131,7 +1131,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="DyeRequired" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1158,7 +1158,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="FaceData" Type="String:128" />
             <Field Name="Unsymmetrical" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1226,8 +1226,8 @@
             <Field Name="Model" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="MaxPetLvl" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="MaxPetLevel" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="PetSndType" Type="Int32" />
             <Field Name="HPAlfa" Type="Single" />
             <Field Name="HPBeta" Type="Single" />
@@ -1282,7 +1282,7 @@
             <Field Name="IncubationCost" Type="Int32" />
             <Field Name="RestoreCost" Type="Int32" />
             <Field Name="Loyalty" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="PetExp" Type="Int32" />
             <Field Name="PetSkillPoints" Type="Int32" />
             <Skill Name="Skills" Count="32" />
@@ -1297,7 +1297,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="Loyalty" Type="Int32" />
             <Field Name="Exp" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
@@ -1324,7 +1324,7 @@
             <Field Name="Model" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="GFX" Type="String:128" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="TimeToFire" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1382,9 +1382,9 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="BonusId" Type="Int32" />
-            <Field Name="BonusLvl" Type="Int32" />
+            <Field Name="BonusLevel" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -1545,7 +1545,7 @@
             <Field Name="Dex" Type="Int32" />
             <Field Name="Mag" Type="Int32" />
             <Field Name="Vit" Type="Int32" />
-            <Field Name="MaxRefineLvl" Type="Int32" />
+            <Field Name="MaxRefineLevel" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="SkillId1" Type="Int32" />
@@ -1567,7 +1567,7 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Slot" Type="Int32" />
-            <Field Name="RequiredLvl" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="Str" Type="Int32" />
             <Field Name="Dex" Type="Int32" />
             <Field Name="Mag" Type="Int32" />
@@ -1589,7 +1589,7 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Exp" Type="Int32" />
-            <Field Name="GenieLvl" Type="Int32" />
+            <Field Name="GenieLevel" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -1620,7 +1620,7 @@
             <Field Name="WorldsCount" Type="Int32" />
             <Array Name="WorldIds" ElementName="WorldId" Type="Int32" Length="10" />
             <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="SkillLevel" Type="Int32" />
             <Field Name="UseInCombat" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1743,14 +1743,14 @@
         <List Name="Guild Base Configs" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="GuildLvlRequired" Type="Int32" />
+            <Field Name="GuildLevelRequired" Type="Int32" />
             <Matter Name="Require Items" Count="8" />
             <GuildBaseLevel Name="Levels" Count="50" />
-            <Array Name="KirinLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
-            <Array Name="TortoiseLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
-            <Array Name="TigerLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
-            <Array Name="PhoenixLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
-            <Array Name="DragonLvls" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="KirinLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="TortoiseLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="TigerLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="PhoenixLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
+            <Array Name="DragonLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
             <Array Name="InitBuildings" ElementName="InitBuildingId" Type="Int32" Length="20" />
             <Array Name="Controllers" ElementName="ControllerId" Type="Int32" Length="100" />
             <CommonValue Name="CommonValues" Count="100" />
@@ -1765,12 +1765,12 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="BaseLvlRequired" Type="Int32" />
-            <Field Name="TortoiseLvlRequired" Type="Int32" />
-            <Field Name="DragonLvlRequired" Type="Int32" />
-            <Field Name="KirinLvlRequired" Type="Int32" />
-            <Field Name="PhoenixLvlRequired" Type="Int32" />
-            <Field Name="TigerLvlRequired" Type="Int32" />
+            <Field Name="BaseLevelRequired" Type="Int32" />
+            <Field Name="TortoiseLevelRequired" Type="Int32" />
+            <Field Name="DragonLevelRequired" Type="Int32" />
+            <Field Name="KirinLevelRequired" Type="Int32" />
+            <Field Name="PhoenixLevelRequired" Type="Int32" />
+            <Field Name="TigerLevelRequired" Type="Int32" />
             <Field Name="Money" Type="Int32" />
             <Field Name="Steel" Type="Int32" />
             <Field Name="Sand" Type="Int32" />
@@ -1857,7 +1857,7 @@
             <Field Name="Type" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="SkillId" Type="Int32" />
-            <Field Name="SkillLvl" Type="Int32" />
+            <Field Name="SkillLevel" Type="Int32" />
             <Field Name="Price" Type="Int32" />
             <Field Name="Duration" Type="Int32" />
             <Array Name="Items" Type="Int32" Length="32" />
