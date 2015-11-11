@@ -359,8 +359,8 @@
             <ValueRangeInt Name="MagicalDefenseWater" />
             <ValueRangeInt Name="MagicalDefenseFire" />
             <ValueRangeInt Name="MagicalDefenseEarth" />
-            <ValueRangeInt Name="MPEnhancement" />
-            <ValueRangeInt Name="HPEnhancement" />
+            <ValueRangeInt Name="MPBonus" />
+            <ValueRangeInt Name="HPBonus" />
             <ValueRangeInt Name="EvasionEnhancement" />
             <ValueRangeInt Name="Durability" />
             <Field Name="RefineId" Type="Int32" />

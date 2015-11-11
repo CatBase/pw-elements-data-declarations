@@ -374,7 +374,7 @@
             <ValueRangeInt Name="MagicalDefenseFire" />
             <ValueRangeInt Name="MagicalDefenseEarth" />
             <ValueRangeInt Name="MPBonus" />
-            <ValueRangeInt Name="HPEnhancement" />
+            <ValueRangeInt Name="HPBonus" />
             <ValueRangeInt Name="EvasionEnhancement" />
             <ValueRangeInt Name="Durability" />
             <Field Name="RefineId" Type="Int32" />
