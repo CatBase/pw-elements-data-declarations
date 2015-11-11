@@ -52,7 +52,7 @@
             <Field Name="Label" Type="UString:16" />
             <Field Name="RequiredContributionPoints" Type="Int32" />
             <Field Name="RequiredOrderId" Type="Int32" />
-            <Field Name="RequiredForcePoints" Type="Int32" />
+            <Field Name="RequiredPrestigePoints" Type="Int32" />
             <StockItem Name="Items" Count="32" />
         </Struct>
         <Struct Name="Matter">
