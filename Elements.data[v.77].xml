@@ -315,12 +315,12 @@
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="RequiredReputation" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
-            <ValueRangeInt Name="PhysicalDefense" />
-            <ValueRangeInt Name="MagicalDefenseMetal" />
-            <ValueRangeInt Name="MagicalDefenseWood" />
-            <ValueRangeInt Name="MagicalDefenseWater" />
-            <ValueRangeInt Name="MagicalDefenseFire" />
-            <ValueRangeInt Name="MagicalDefenseEarth" />
+            <ValueRangeInt Name="PhysicalDefence" />
+            <ValueRangeInt Name="MagicalDefenceMetal" />
+            <ValueRangeInt Name="MagicalDefenceWood" />
+            <ValueRangeInt Name="MagicalDefenceWater" />
+            <ValueRangeInt Name="MagicalDefenceFire" />
+            <ValueRangeInt Name="MagicalDefenceEarth" />
             <ValueRangeInt Name="MPBonus" />
             <ValueRangeInt Name="HPBonus" />
             <ValueRangeInt Name="EvasionBonus" />
@@ -377,12 +377,12 @@
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalAttack" />
             <ValueRangeInt Name="MagicalAttack" />
-            <ValueRangeInt Name="PhysicalDefense" />
-            <ValueRangeInt Name="MagicalDefenseMetal" />
-            <ValueRangeInt Name="MagicalDefenseWood" />
-            <ValueRangeInt Name="MagicalDefenseWater" />
-            <ValueRangeInt Name="MagicalDefenseFire" />
-            <ValueRangeInt Name="MagicalDefenseEarth" />
+            <ValueRangeInt Name="PhysicalDefence" />
+            <ValueRangeInt Name="MagicalDefenceMetal" />
+            <ValueRangeInt Name="MagicalDefenceWood" />
+            <ValueRangeInt Name="MagicalDefenceWater" />
+            <ValueRangeInt Name="MagicalDefenceFire" />
+            <ValueRangeInt Name="MagicalDefenceEarth" />
             <ValueRangeInt Name="EvasionBonus" />
             <ValueRangeInt Name="Durability" />
             <Field Name="RefineId" Type="Int32" />
@@ -721,8 +721,8 @@
             <Field Name="PowerLevel" Type="Int32" />
             <Field Name="EggId" Type="Int32" />
             <Field Name="HP" Type="Int32" />
-            <Field Name="PhysicalDefense" Type="Int32" />
-            <MagicElements Name="MagicalDefense" />
+            <Field Name="PhysicalDefence" Type="Int32" />
+            <MagicElements Name="MagicalDefence" />
             <Field Name="ImmunType" Type="Int32" />
             <Field Name="Exp" Type="Int32" />
             <Field Name="Sp" Type="Int32" />
@@ -756,7 +756,7 @@
             <Field Name="FlySpeed" Type="Single" />
             <Field Name="SwimSpeed" Type="Single" />
             <Field Name="AttackDegree" Type="Int32" />
-            <Field Name="DefenseDegree" Type="Int32" />
+            <Field Name="DefenceDegree" Type="Int32" />
             <Field Name="AIPolicyId" Type="Int32" />
             <Chance Name="AgroStrategy" Count="4" />
             <SkillChance Name="SkillOnHP75" Count="5" />
@@ -1295,14 +1295,14 @@
             <Field Name="ArmorAlpha" Type="Single" />
             <Field Name="ArmorBeta" Type="Single" />
             <Field Name="ArmorGamma" Type="Single" />
-            <Field Name="PhysicalDefenseAlfa" Type="Single" />
-            <Field Name="PhysicalDefenseBeta" Type="Single" />
-            <Field Name="PhysicalDefenseGamma" Type="Single" />
-            <Field Name="PhysicalDefenseDelta" Type="Single" />
-            <Field Name="MagicalDefenseAlfa" Type="Single" />
-            <Field Name="MagicalDefenseBeta" Type="Single" />
-            <Field Name="MagicalDefenseGamma" Type="Single" />
-            <Field Name="MagicalDefenseDelta" Type="Single" />
+            <Field Name="PhysicalDefenceAlfa" Type="Single" />
+            <Field Name="PhysicalDefenceBeta" Type="Single" />
+            <Field Name="PhysicalDefenceGamma" Type="Single" />
+            <Field Name="PhysicalDefenceDelta" Type="Single" />
+            <Field Name="MagicalDefenceAlfa" Type="Single" />
+            <Field Name="MagicalDefenceBeta" Type="Single" />
+            <Field Name="MagicalDefenceGamma" Type="Single" />
+            <Field Name="MagicalDefenceDelta" Type="Single" />
             <Field Name="MP" Type="Single" />
             <Field Name="MPGen" Type="Single" />
             <Field Name="AttackDegree" Type="Single" />
