@@ -272,13 +272,13 @@
             <Field Name="ModelLeft" Type="String:128" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="StrRequired" Type="Int32" />
-            <Field Name="AgiRequired" Type="Int32" />
-            <Field Name="IntRequired" Type="Int32" />
-            <Field Name="VitRequired" Type="Int32" />
+            <Field Name="RequiredStr" Type="Int32" />
+            <Field Name="RequiredAgi" Type="Int32" />
+            <Field Name="RequiredInt" Type="Int32" />
+            <Field Name="RequiredVit" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="ReputationRequired" Type="Int32" />
+            <Field Name="RequiredReputation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
@@ -330,13 +330,13 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="StrRequired" Type="Int32" />
-            <Field Name="AgiRequired" Type="Int32" />
-            <Field Name="IntRequired" Type="Int32" />
-            <Field Name="VitRequired" Type="Int32" />
+            <Field Name="RequiredStr" Type="Int32" />
+            <Field Name="RequiredAgi" Type="Int32" />
+            <Field Name="RequiredInt" Type="Int32" />
+            <Field Name="RequiredVit" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="ReputationRequired" Type="Int32" />
+            <Field Name="RequiredReputation" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalDefense" />
             <ValueRangeInt Name="MagicalDefenseMetal" />
@@ -390,13 +390,13 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="StrRequired" Type="Int32" />
-            <Field Name="AgiRequired" Type="Int32" />
-            <Field Name="IntRequired" Type="Int32" />
-            <Field Name="VitRequired" Type="Int32" />
+            <Field Name="RequiredStr" Type="Int32" />
+            <Field Name="RequiredAgi" Type="Int32" />
+            <Field Name="RequiredInt" Type="Int32" />
+            <Field Name="RequiredVit" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="ReputationRequired" Type="Int32" />
+            <Field Name="RequiredReputation" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalAttack" />
             <ValueRangeInt Name="MagicalAttack" />
@@ -641,8 +641,8 @@
             <Field Name="GFX1" Type="String:128" />
             <Field Name="GFX2" Type="String:128" />
             <Field Name="SFX" Type="String:128" />
-            <Field Name="StrRequired" Type="Int32" />
-            <Field Name="AgiRequired" Type="Int32" />
+            <Field Name="RequiredStr" Type="Int32" />
+            <Field Name="RequiredAgi" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
             <ValueRangeInt Name="MaxPhysicalAttack" />
@@ -1199,7 +1199,7 @@
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="DyeRequired" Type="Int32" />
+            <Field Name="RequiredDye" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="Sex" Type="Int32" />
@@ -1829,7 +1829,7 @@
         <List Name="Guild Base Configs" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="GuildRequiredLevel" Type="Int32" />
+            <Field Name="RequiredGuildLevel" Type="Int32" />
             <Matter Name="Require Items" Count="8" />
             <GuildBaseLevel Name="Levels" Count="50" />
             <Array Name="KirinLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
