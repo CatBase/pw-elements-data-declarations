@@ -398,7 +398,7 @@
             <Field Name="SubType" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
-            <Field Name="Surface" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="DecomposePrice" Type="Int32" />

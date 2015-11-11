@@ -423,7 +423,7 @@
             <Field Name="SubType" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
-            <Field Name="Surface" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="DecomposePrice" Type="Int32" />
@@ -1909,7 +1909,7 @@
         <List Name="Force Configs" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="Surface" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
             <Field Name="Color" Type="Single" />
             <Field Name="Text" Type="UString:512" />
             <Field Name="MaxPrestige" Type="Int32" />
@@ -1922,7 +1922,7 @@
         <List Name="Force Token" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
-            <Field Name="Surface" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
             <Field Name="RequireForceId" Type="Int32" />
             <Field Name="PrestigeAdd" Type="Int32" />
             <Field Name="InfluenceRatio" Type="Int32" />
@@ -1945,7 +1945,7 @@
         <List Name="Dyn Skill Equip" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
-            <Field Name="Surface" Type="String:128" />
+            <Field Name="Icon" Type="String:128" />
             <Field Name="SkillId" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
