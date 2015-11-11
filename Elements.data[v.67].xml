@@ -1102,8 +1102,7 @@
             <Field Name="RequiredLvl" Type="Int32" />
             <Field Name="RequiredItem" Type="Int32" />
             <Field Name="EliminateTool" Type="Int32" />
-            <Field Name="MinTime" Type="Int32" />
-            <Field Name="MaxTime" Type="Int32" />
+            <ValueRangeInt Name="MineTime" />
             <Field Name="Exp" Type="Int32" />
             <Field Name="SP" Type="Int32" />
             <Field Name="Model" Type="String:128" />
