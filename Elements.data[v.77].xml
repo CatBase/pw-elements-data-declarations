@@ -282,7 +282,7 @@
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
             <Field Name="DecomposeItemAmount" Type="Int32" />
-            <Field Name="ShatterToItem" Type="Int32" />
+            <Field Name="ShatterToItemId" Type="Int32" />
             <Field Name="ShatterItemCount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
@@ -340,7 +340,7 @@
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
             <Field Name="DecomposeItemAmount" Type="Int32" />
-            <Field Name="ShatterToItem" Type="Int32" />
+            <Field Name="ShatterToItemId" Type="Int32" />
             <Field Name="ShatterItemCount" Type="Int32" />
             <Field Name="HairStyle" Type="Int32" />
             <Field Name="FaceStyle" Type="Int32" />
@@ -398,7 +398,7 @@
             <Field Name="DecomposeTime" Type="Int32" />
             <Field Name="DecomposeToItemId" Type="Int32" />
             <Field Name="DecomposeItemAmount" Type="Int32" />
-            <Field Name="ShatterToItem" Type="Int32" />
+            <Field Name="ShatterToItemId" Type="Int32" />
             <Field Name="ShatterItemCount" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
