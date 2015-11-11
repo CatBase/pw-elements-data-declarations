@@ -110,7 +110,7 @@
         <Struct Name="TowerBuildInfo">
             <Field Name="ProgressMonsterId" Type="Int32" />
             <Field Name="FinalMonsterId" Type="Int32" />
-            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="BuildTime" Type="Int32" />
             <Field Name="Price" Type="Int32" />
         </Struct>
@@ -1136,7 +1136,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="EliminateTool" Type="Int32" />
             <ValueRangeInt Name="MineTime" />
             <Field Name="Exp" Type="Int32" />
@@ -1417,7 +1417,7 @@
         <List Name="NPC Pet Rename Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="Price" Type="Int32" />
         </List>
         <List Name="NPC Pet Skill Trainer Services" Interface="IElementsRecord">
@@ -1429,7 +1429,7 @@
         <List Name="NPC Forget Pet Skill Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="Price" Type="Int32" />
         </List>
         <List Name="Medicines" Interface="IElementTradableItemRecord">
@@ -1478,23 +1478,23 @@
         <List Name="Bind Item Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="RequiredItem" Type="Int32" />
-            <Field Name="RequiredItem2" Type="Int32" />
-            <Field Name="RequiredItem3" Type="Int32" />
-            <Field Name="RequiredItem4" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
+            <Field Name="RequiredItem2Id" Type="Int32" />
+            <Field Name="RequiredItem3Id" Type="Int32" />
+            <Field Name="RequiredItem4Id" Type="Int32" />
             <Field Name="Price" Type="Int32" />
             <Field Name="BindType" Type="Int32" />
         </List>
         <List Name="NPC Item Destroy Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="Price" Type="Int32" />
         </List>
         <List Name="NPC Cancel Item Destruction Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="RequiredItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="Price" Type="Int32" />
         </List>
         <List Name="Heaven Books" Interface="IElementTradableItemRecord">
