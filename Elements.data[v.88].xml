@@ -2000,7 +2000,7 @@
             <Field Name="QuitPrestigeCost" Type="Int32" />
             <Field Name="QuitInfluenceCost" Type="Int32" />
         </List>
-        <List Name="Force Token Essences" Interface="IElementTradableItemRecord">
+        <List Name="Force Token" Interface="IElementTradableItemRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
             <Field Name="Surface" Type="String:128" />
@@ -2023,7 +2023,7 @@
             <Field Name="Name" Type="UString:64" />
             <Array Name="Items" ElementName="ItemID" Type="Int32" Length="256" />
         </List>
-        <List Name="Dyn Skill Equip Essences" Interface="IElementsRecord">
+        <List Name="Dyn Skill Equip" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
             <Field Name="Surface" Type="String:128" />
@@ -2081,7 +2081,7 @@
             <Field Name="Name" Type="UString:64" />
             <Skill Name="Skills" ElementName="Skill" Count="2" />
         </List>
-        <List Name="Money Convertible Essences" Interface="IElementsRecord">
+        <List Name="Money Convertible" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
