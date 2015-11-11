@@ -194,7 +194,7 @@
         <List Name="Weapons" Interface="IElementsRefinableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="AmmoType" Type="Int32" />
             <Field Name="ModelRight" Type="String:128" />
@@ -252,7 +252,7 @@
         <List Name="Armors" Interface="IElementsRefinableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="RealName" Type="String:32" />
             <Field Name="MatterModel" Type="String:128" />
@@ -313,7 +313,7 @@
         <List Name="Decorations" Interface="IElementsRefinableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
             <Field Name="MatterModel" Type="String:128" />
@@ -367,7 +367,7 @@
         <List Name="Potions" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
@@ -394,7 +394,7 @@
         <List Name="Materials" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
@@ -969,7 +969,7 @@
         <List Name="Recipes" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Grade" Type="Int32" />
             <Skill Name="Skill" />
@@ -1112,7 +1112,7 @@
         <List Name="Fashions" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="RealName" Type="String:32" />
             <Field Name="MatterModel" Type="String:128" />
@@ -1142,7 +1142,7 @@
         <List Name="Transfiguration Scrolls" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
@@ -1166,7 +1166,7 @@
         <List Name="Facepills" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
@@ -1813,7 +1813,7 @@
         <List Name="Engravings" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
-            <Field Name="SubType" Type="Int32" />
+            <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
