@@ -46,7 +46,7 @@
         <Struct Name="StockItem">
             <Field Name="ID" Type="Int32" />
             <Field Name="ContributionPoints" Type="Int32" />
-            <Field Name="ForcePoints" Type="Int32" />
+            <Field Name="InfluencePoints" Type="Int32" />
         </Struct>
         <Struct Name="StockPage">
             <Field Name="Label" Type="UString:16" />
