@@ -2215,7 +2215,7 @@
         <List Name="History Stage Configs" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Array Name="HistoryStageIDs" ElementName="HistoryStageID" Type="Int32" Length="32" />
+            <Array Name="Stages" ElementName="Id" Type="Int32" Length="32" />
         </List>
         <List Name="AutoTeam Essences" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
