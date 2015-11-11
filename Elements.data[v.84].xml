@@ -292,7 +292,7 @@
             <Field Name="RefineMaterialAmount" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <Field Name="RepairFee" Type="Int32" />
+            <Field Name="RepairPrice" Type="Int32" />
             <Array Name="DropSocketChances" Type="Single" Length="3" />
             <Array Name="CraftSocketChances" Type="Single" Length="3" />
             <Array Name="BonusChances" Type="Single" Length="5" />
@@ -352,7 +352,7 @@
             <Field Name="RefineMaterialAmount" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <Field Name="RepairFee" Type="Int32" />
+            <Field Name="RepairPrice" Type="Int32" />
             <Array Name="DropSocketChances" Type="Single" Length="5" />
             <Array Name="CraftSocketChances" Type="Single" Length="5" />
             <Array Name="BonusChances" Type="Single" Length="4" />
@@ -412,7 +412,7 @@
             <Field Name="RefineMaterialAmount" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
-            <Field Name="RepairFee" Type="Int32" />
+            <Field Name="RepairPrice" Type="Int32" />
             <Array Name="BonusChances" Type="Single" Length="4" />
             <Chance Name="DropBonuses" Count="32" />
             <Chance Name="CraftBonuses" Count="32" />
