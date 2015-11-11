@@ -1564,7 +1564,7 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Slot" Type="Int32" />
-            <Field Name="RequiredLevel" Type="Int32" />
+            <Field Name="RequiredGenieLevel" Type="Int32" />
             <Field Name="Strength" Type="Int32" />
             <Field Name="Dexterity" Type="Int32" />
             <Field Name="Magic" Type="Int32" />
