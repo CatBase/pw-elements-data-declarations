@@ -743,7 +743,7 @@
             <Field Name="HPAdjust" Type="Int32" />
             <Field Name="DefAdjust" Type="Int32" />
             <Field Name="AtkAdjust" Type="Int32" />
-            <Field Name="DropForNoProfitTime" Type="Single" />
+            <Field Name="MaxMoveRange" Type="Single" />
         </List>
         <List Name="NPC Talk Services" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
