@@ -1425,7 +1425,7 @@
             <Field Name="Safe" Type="Single" />
             <Field Name="Chance" Type="Single" />
             <Field Name="StaticChance" Type="Int32" />
-            <Array Name="SuccessProbability" Type="Single" Length="12" />
+            <Array Name="SuccessChance" Type="Single" Length="12" />
             <Field Name="BindingOnly" Type="Int32" />
             <Field Name="MaxItemGrade" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />

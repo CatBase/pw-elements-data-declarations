@@ -218,7 +218,7 @@
             <NumRandSkill Name="NumRandSkill" Count="2" />
         </Struct>
         <Struct Name="RandSkillGroup">
-            <Field Name="Probability" Type="Single" />
+            <Field Name="Chance" Type="Single" />
             <Array Name="List" Type="Int32" Length="30" />
         </Struct>
         <Struct Name="ProfParam">
@@ -246,7 +246,7 @@
         </Struct>
         <Struct Name="DropMine">
             <Field Name="Id" Type="Int32" />
-            <Field Name="Probability" Type="Single" />
+            <Field Name="Chance" Type="Single" />
             <Field Name="Life" Type="Int32" />
         </Struct>
         <Struct Name="SpiritList">
@@ -834,7 +834,7 @@
             <Field Name="MaxMoveRange" Type="Single" />
             <Field Name="DropForNoProfitTime" Type="Int32" />
             <Field Name="DropMineConditionFlag" Type="Int32" />
-            <Field Name="DropMineProbability" Type="Single" />
+            <Field Name="DropMineChance" Type="Single" />
             <DropMine Name="DropMines" ElementName="DropMine" Count="4" />
         </List>
         <List Name="NPC Talk Services" Interface="IElementsRecord">
@@ -1523,7 +1523,7 @@
             <Field Name="Safe" Type="Single" />
             <Field Name="Chance" Type="Single" />
             <Field Name="StaticChance" Type="Int32" />
-            <Array Name="SuccessProbability" Type="Single" Length="12" />
+            <Array Name="SuccessChance" Type="Single" Length="12" />
             <Field Name="BindingOnly" Type="Int32" />
             <Field Name="MaxItemGrade" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
