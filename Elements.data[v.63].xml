@@ -211,7 +211,7 @@
             <Field Name="IntRequired" Type="Int32" />
             <Field Name="VitRequired" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="LevelRequired" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="ReputationRequired" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
@@ -269,7 +269,7 @@
             <Field Name="IntRequired" Type="Int32" />
             <Field Name="VitRequired" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="LevelRequired" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="ReputationRequired" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalDefense" />
@@ -329,7 +329,7 @@
             <Field Name="IntRequired" Type="Int32" />
             <Field Name="VitRequired" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
-            <Field Name="LevelRequired" Type="Int32" />
+            <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="ReputationRequired" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalAttack" />
@@ -1743,7 +1743,7 @@
         <List Name="Guild Base Configs" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="GuildLevelRequired" Type="Int32" />
+            <Field Name="GuildRequiredLevel" Type="Int32" />
             <Matter Name="Require Items" Count="8" />
             <GuildBaseLevel Name="Levels" Count="50" />
             <Array Name="KirinLevels" ElementName="TechPointCost" Type="Int32" Length="7" />
@@ -1765,12 +1765,12 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="BaseLevelRequired" Type="Int32" />
-            <Field Name="TortoiseLevelRequired" Type="Int32" />
-            <Field Name="DragonLevelRequired" Type="Int32" />
-            <Field Name="KirinLevelRequired" Type="Int32" />
-            <Field Name="PhoenixLevelRequired" Type="Int32" />
-            <Field Name="TigerLevelRequired" Type="Int32" />
+            <Field Name="BaseRequiredLevel" Type="Int32" />
+            <Field Name="TortoiseRequiredLevel" Type="Int32" />
+            <Field Name="DragonRequiredLevel" Type="Int32" />
+            <Field Name="KirinRequiredLevel" Type="Int32" />
+            <Field Name="PhoenixRequiredLevel" Type="Int32" />
+            <Field Name="TigerRequiredLevel" Type="Int32" />
             <Field Name="Money" Type="Int32" />
             <Field Name="Steel" Type="Int32" />
             <Field Name="Sand" Type="Int32" />
