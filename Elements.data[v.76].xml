@@ -1918,7 +1918,7 @@
             <Array Name="Tasks" ElementName="TaskId" Type="Int32" Length="512" />
             <Array Name="Skills" ElementName="SkillId" Type="Int32" Length="128" />
         </List>
-        <List Name="Force Configs" Interface="IElementsRecord">
+        <List Name="Order Configs" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Icon" Type="String:128" />
@@ -1931,7 +1931,7 @@
             <Field Name="QuitPrestigeCost" Type="Int32" />
             <Field Name="QuitInfluenceCost" Type="Int32" />
         </List>
-        <List Name="Force Token" Interface="IElementTradableItemRecord">
+        <List Name="Order Token" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
             <Field Name="Icon" Type="String:128" />
@@ -1944,7 +1944,7 @@
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
         </List>
-        <List Name="Npc Force Services" Interface="IElementsRecord">
+        <List Name="Npc Order Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="ForceId" Type="Int32" />
