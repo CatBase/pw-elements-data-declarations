@@ -839,7 +839,7 @@
             <Field Name="Model" Type="String:128" />
             <Field Name="TaxRate" Type="Single" />
             <Field Name="MonsterId" Type="Int32" />
-            <Field Name="HelloMsg" Type="UString:512" />
+            <Field Name="HelloMessage" Type="UString:512" />
             <Field Name="TeleportId" Type="Int32" />
             <Field Name="DomainRelated" Type="Int32" />
             <Field Name="TalkService" Type="Int32" />
