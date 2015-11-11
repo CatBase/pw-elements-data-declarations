@@ -1880,7 +1880,7 @@
             <Field Name="Text" Type="UString:512" />
             <Field Name="MaxPrestige" Type="Int32" />
             <Field Name="MaxInfluence" Type="Int32" />
-            <Field Name="JoinMoneyCost" Type="Int32" />
+            <Field Name="JoinPrice" Type="Int32" />
             <Field Name="JoinItemCost" Type="Int32" />
             <Field Name="QuitPrestigeCost" Type="Int32" />
             <Field Name="QuitInfluenceCost" Type="Int32" />
