@@ -111,7 +111,7 @@
             <Field Name="ProgressMonsterId" Type="Int32" />
             <Field Name="FinalMonsterId" Type="Int32" />
             <Field Name="RequiredItemId" Type="Int32" />
-            <Field Name="BuildTime" Type="Int32" />
+            <Field Name="BuildingTime" Type="Int32" />
             <Field Name="Price" Type="Int32" />
         </Struct>
         <Struct Name="ResetPropEntry">
