@@ -273,7 +273,7 @@
             <ValueRangeInt Name="MagicalDefenseWater" />
             <ValueRangeInt Name="MagicalDefenseFire" />
             <ValueRangeInt Name="MagicalDefenseEarth" />
-            <ValueRangeInt Name="MPEnhancement" />
+            <ValueRangeInt Name="MPBonus" />
             <ValueRangeInt Name="HPEnhancement" />
             <ValueRangeInt Name="EvasionEnhancement" />
             <ValueRangeInt Name="Durability" />
