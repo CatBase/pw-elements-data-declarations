@@ -2005,7 +2005,7 @@
         <List Name="Npc Order Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="ForceId" Type="Int32" />
+            <Field Name="OrderId" Type="Int32" />
         </List>
         <List Name="Player Death Drop Configs" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
