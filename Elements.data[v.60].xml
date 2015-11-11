@@ -112,10 +112,10 @@
         </Struct>
         <Struct Name="ResetPropEntry">
             <Field Name="RequiredItemId" Type="Int32" />
-            <Field Name="StrDelta" Type="Int32" />
-            <Field Name="AgiDelta" Type="Int32" />
-            <Field Name="VitDelta" Type="Int32" />
-            <Field Name="IntDelta" Type="Int32" />
+            <Field Name="StrengthDelta" Type="Int32" />
+            <Field Name="AgilityDelta" Type="Int32" />
+            <Field Name="VitalityDelta" Type="Int32" />
+            <Field Name="IntelligenceDelta" Type="Int32" />
         </Struct>
         <Struct Name="TextureMap">
             <Field Name="ModelId" Type="Int32" />
