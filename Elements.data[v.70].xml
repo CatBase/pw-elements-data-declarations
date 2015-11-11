@@ -17,7 +17,7 @@
             <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="SkillChance">
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SkillLevel" Type="Int32" />
             <Field Name="Chance" Type="Single" />
         </Struct>
@@ -719,7 +719,7 @@
             <Field Name="AttackRange" Type="Single" />
             <Field Name="AttackSpeed" Type="Single" />
             <ValueRangeInt Name="MagicalAttack" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SkillLvl" Type="Int32" />
             <Field Name="HPRegen" Type="Int32" />
             <Field Name="AggroMode" Type="Int32" />
@@ -815,7 +815,7 @@
         <List Name="NPC Skill Trainer Services" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Array Name="Skills" ElementName="SkillID" Type="Int32" Length="128" />
+            <Array Name="Skills" ElementName="SkillId" Type="Int32" Length="128" />
             <Field Name="DialogueID" Type="Int32" />
         </List>
         <List Name="NPC Cure Services" Interface="IElementsRecord">
@@ -846,7 +846,7 @@
         <List Name="NPC Crafting Services" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="ProduceType" Type="Int32" />
             <RecipePage Name="Pages" Count="8" />
         </List>
@@ -1003,7 +1003,7 @@
             <Field Name="SubType" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Grade" Type="Int32" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SkillLvl" Type="Int32" />
             <Field Name="BindType" Type="Int32" />
             <Chance Name="Targets" Count="4" />
@@ -1647,7 +1647,7 @@
             <Field Name="UsePerTimeCount" Type="Int32" />
             <Field Name="WorldsCount" Type="Int32" />
             <Array Name="WorldIDs" ElementName="WorldID" Type="Int32" Length="10" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SkillLvl" Type="Int32" />
             <Field Name="UseInCombat" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1695,7 +1695,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SkillLevel" Type="Int32" />
             <Field Name="Rate" Type="Single" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1885,7 +1885,7 @@
             <Field Name="ID" Type="Int32" />
             <Field Name="Type" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SkillLvl" Type="Int32" />
             <Field Name="Price" Type="Int32" />
             <Field Name="Duration" Type="Int32" />
@@ -1898,7 +1898,7 @@
             <Array Name="Essences" ElementName="ItemID" Type="Int32" Length="512" />
             <Array Name="Recipes" ElementName="RecipeID" Type="Int32" Length="128" />
             <Array Name="Tasks" ElementName="TaskID" Type="Int32" Length="512" />
-            <Array Name="Skills" ElementName="SkillID" Type="Int32" Length="128" />
+            <Array Name="Skills" ElementName="SkillId" Type="Int32" Length="128" />
         </List>
         <List Name="Force Configs" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
@@ -1940,7 +1940,7 @@
             <Field Name="ID" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
             <Field Name="Surface" Type="String:128" />
-            <Field Name="SkillID" Type="Int32" />
+            <Field Name="SkillId" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
