@@ -422,7 +422,7 @@
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <ValueRangeInt Name="RequiredLevel" />
-            <Field Name="AttackEnhancement" Type="Int32" />
+            <Field Name="AttackBonus" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
