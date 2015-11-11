@@ -150,8 +150,8 @@
             <Field Name="Month" Type="Int32" />
             <Field Name="Day" Type="Int32" />
         </Struct>
-        <Struct Name="Location" Count="2">
-            <Field Name="Place" Type="UString:32" />
+        <Struct Name="Location">
+            <Field Name="WorldId" Type="UString:32" />
             <Field Name="PosX" Type="Single" />
             <Field Name="PosZ" Type="Single" />
             <Field Name="PosY" Type="Single" />
