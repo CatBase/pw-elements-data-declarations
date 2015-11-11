@@ -273,7 +273,7 @@
             <Field Name="ProbNormal" Type="Single" />
             <Field Name="ProbSlow" Type="Single" />
             <Field Name="ProbSlowest" Type="Single" />
-            <Field Name="AtkSpeed" Type="Single" />
+            <Field Name="AttackSpeed" Type="Single" />
             <Field Name="PenaltyRange" Type="Single" />
             <Field Name="ActionType" Type="Int32" />
         </List>
@@ -661,8 +661,8 @@
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
             <ValueRangeInt Name="MaxPhysicalAttack" />
-            <Field Name="AtkDelay" Type="Single" />
-            <Field Name="AtkRange" Type="Single" />
+            <Field Name="AttackDelay" Type="Single" />
+            <Field Name="AttackRange" Type="Single" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -816,7 +816,7 @@
             <Field Name="CombinedSwitch" Type="Int32" />
             <Field Name="HPAdjust" Type="Int32" />
             <Field Name="DefAdjust" Type="Int32" />
-            <Field Name="AtkAdjust" Type="Int32" />
+            <Field Name="AttackAdjust" Type="Int32" />
             <Field Name="MaxMoveRange" Type="Single" />
             <Field Name="DropForNoProfitTime" Type="Int32" />
             <Field Name="DropMineConditionFlag" Type="Int32" />
@@ -1107,8 +1107,8 @@
             <Field Name="EvasionxAgility" Type="Int32" />
             <Field Name="HPLevelUp" Type="Int32" />
             <Field Name="MPLevelUp" Type="Int32" />
-            <Field Name="PAtkLevelUp" Type="Single" />
-            <Field Name="MAtkLevelUp" Type="Single" />
+            <Field Name="PAttackLevelUp" Type="Single" />
+            <Field Name="MAttackLevelUp" Type="Single" />
             <Field Name="PDefLevelUp" Type="Int32" />
             <Field Name="MDefLevelUp" Type="Int32" />
             <Field Name="AgroIncrease" Type="Int32" />
