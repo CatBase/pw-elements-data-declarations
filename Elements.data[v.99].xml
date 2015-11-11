@@ -1,12 +1,12 @@
 <ElementsData Type="PerfectWorld" Version="99">
     <Structs>
         <Struct Name="ValueRangeInt">
-            <Field Name="Low" Type="Int32" />
-            <Field Name="High" Type="Int32" />
+            <Field Name="Min" Type="Int32" />
+            <Field Name="Max" Type="Int32" />
         </Struct>
         <Struct Name="ValueRangeSingle">
-            <Field Name="Low" Type="Single" />
-            <Field Name="High" Type="Single" />
+            <Field Name="Min" Type="Single" />
+            <Field Name="Max" Type="Single" />
         </Struct>
         <Struct Name="Chance">
             <Field Name="ID" Type="Int32" />
