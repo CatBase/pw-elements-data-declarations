@@ -713,7 +713,7 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ItemID" Type="Int32" />
-            <ValueRangeInt Name="Count" />
+            <ValueRangeInt Name="AmmoCount" />
         </List>
         <List Name="Soulgem Types" Interface="IElementsRecord">
             <Field Name="ID" Type="Int32" />
