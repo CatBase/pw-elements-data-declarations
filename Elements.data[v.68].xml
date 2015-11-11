@@ -1604,7 +1604,7 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Exp" Type="Int32" />
-            <Field Name="GenieLevel" Type="Int32" />
+            <Field Name="RequiredGenieLevel" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
