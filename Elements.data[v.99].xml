@@ -115,7 +115,7 @@
             <Field Name="Price" Type="Int32" />
         </Struct>
         <Struct Name="ResetPropEntry">
-            <Field Name="RequireItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="StrDelta" Type="Int32" />
             <Field Name="AgiDelta" Type="Int32" />
             <Field Name="VitDelta" Type="Int32" />
@@ -255,7 +255,7 @@
             <Field Name="GainRatio" Type="Single" />
         </Struct>
         <Struct Name="PromoteLevel">
-            <Field Name="RequireItem" Type="Int32" />
+            <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="ExpPromote" Type="Single" />
         </Struct>
         <Struct Name="Location">
