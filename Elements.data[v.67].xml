@@ -1885,7 +1885,7 @@
             <Field Name="JoinPrice" Type="Int32" />
             <Field Name="JoinItemCost" Type="Int32" />
             <Field Name="QuitPrestigeLoss" Type="Int32" />
-            <Field Name="QuitInfluenceCost" Type="Int32" />
+            <Field Name="QuitInfluenceLoss" Type="Int32" />
         </List>
         <List Name="Order Token" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
