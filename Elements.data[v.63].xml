@@ -117,7 +117,7 @@
         <Struct Name="ResetPropEntry">
             <Field Name="RequiredItemId" Type="Int32" />
             <Field Name="StrengthDelta" Type="Int32" />
-            <Field Name="AgilityDelta" Type="Int32" />
+            <Field Name="DexterityDelta" Type="Int32" />
             <Field Name="VitalityDelta" Type="Int32" />
             <Field Name="IntelligenceDelta" Type="Int32" />
         </Struct>
@@ -206,7 +206,7 @@
             <Field Name="MatterModel" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="RequiredStrength" Type="Int32" />
-            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredDexterity" Type="Int32" />
             <Field Name="RequiredIntelligence" Type="Int32" />
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
@@ -264,7 +264,7 @@
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredStrength" Type="Int32" />
-            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredDexterity" Type="Int32" />
             <Field Name="RequiredIntelligence" Type="Int32" />
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
@@ -324,7 +324,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredStrength" Type="Int32" />
-            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredDexterity" Type="Int32" />
             <Field Name="RequiredIntelligence" Type="Int32" />
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
@@ -575,7 +575,7 @@
             <Field Name="GFX2" Type="String:128" />
             <Field Name="SFX" Type="String:128" />
             <Field Name="RequiredStrength" Type="Int32" />
-            <Field Name="RequiredAgility" Type="Int32" />
+            <Field Name="RequiredDexterity" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
             <ValueRangeInt Name="MaxPhysicalAttack" />
@@ -1015,8 +1015,8 @@
             <Field Name="CritRate" Type="Int32" />
             <Field Name="HPxVitality" Type="Int32" />
             <Field Name="MPxIntelligence" Type="Int32" />
-            <Field Name="AccuracyxAgility" Type="Int32" />
-            <Field Name="EvasionxAgility" Type="Int32" />
+            <Field Name="AccuracyxDexterity" Type="Int32" />
+            <Field Name="EvasionxDexterity" Type="Int32" />
             <Field Name="HPLevelUp" Type="Int32" />
             <Field Name="MPLevelUp" Type="Int32" />
             <Field Name="PAttackLevelUp" Type="Single" />
