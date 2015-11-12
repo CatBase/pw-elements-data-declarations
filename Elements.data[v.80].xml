@@ -119,7 +119,7 @@
             <Field Name="StrengthDelta" Type="Int32" />
             <Field Name="DexterityDelta" Type="Int32" />
             <Field Name="VitalityDelta" Type="Int32" />
-            <Field Name="IntelligenceDelta" Type="Int32" />
+            <Field Name="MagicDelta" Type="Int32" />
         </Struct>
         <Struct Name="TextureMap">
             <Field Name="ModelId" Type="Int32" />
@@ -260,7 +260,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="RequiredStrength" Type="Int32" />
             <Field Name="RequiredDexterity" Type="Int32" />
-            <Field Name="RequiredIntelligence" Type="Int32" />
+            <Field Name="RequiredMagic" Type="Int32" />
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
@@ -318,7 +318,7 @@
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredStrength" Type="Int32" />
             <Field Name="RequiredDexterity" Type="Int32" />
-            <Field Name="RequiredIntelligence" Type="Int32" />
+            <Field Name="RequiredMagic" Type="Int32" />
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
@@ -378,7 +378,7 @@
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredStrength" Type="Int32" />
             <Field Name="RequiredDexterity" Type="Int32" />
-            <Field Name="RequiredIntelligence" Type="Int32" />
+            <Field Name="RequiredMagic" Type="Int32" />
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
@@ -1069,7 +1069,7 @@
             <Field Name="FlySpeed" Type="Single" />
             <Field Name="CritRate" Type="Int32" />
             <Field Name="HPxVitality" Type="Int32" />
-            <Field Name="MPxIntelligence" Type="Int32" />
+            <Field Name="MPxMagic" Type="Int32" />
             <Field Name="AccuracyxDexterity" Type="Int32" />
             <Field Name="EvasionxDexterity" Type="Int32" />
             <Field Name="HPLevelUp" Type="Int32" />
