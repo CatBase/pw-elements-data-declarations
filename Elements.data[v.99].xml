@@ -13,7 +13,7 @@
             <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="AmountChance">
-            <Field Name="Count" Type="Int32" />
+            <Field Name="Amount" Type="Int32" />
             <Field Name="Chance" Type="Single" />
         </Struct>
         <Struct Name="Skill">
@@ -1680,7 +1680,7 @@
             <Field Name="SkillId1" Type="Int32" />
             <Field Name="SkillId2" Type="Int32" />
             <Field Name="SkillId3" Type="Int32" />
-            <Chance Name="LuckyPoints" Count="10" />
+            <AmountChance Name="LuckyPoints" Count="10" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
             <Field Name="ProcType" Type="Int32" />
