@@ -473,7 +473,7 @@
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <ValueRangeInt Name="RequiredLevel" />
-            <Field Name="ReduceDamage" Type="Single" />
+            <Field Name="DamageReduction" Type="Single" />
             <Field Name="OverTime" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
             <Field Name="HasGuid" Type="Int32" />
