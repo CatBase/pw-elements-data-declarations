@@ -1857,7 +1857,7 @@
             <Field Name="RequiredKirinLevel" Type="Int32" />
             <Field Name="RequiredPhoenixLevel" Type="Int32" />
             <Field Name="RequiredTigerLevel" Type="Int32" />
-            <Field Name="RequiredMoney" Type="Int32" />
+            <Field Name="Price" Type="Int32" />
             <Field Name="RequiredSteel" Type="Int32" />
             <Field Name="RequiredSand" Type="Int32" />
             <Field Name="RequiredStone" Type="Int32" />
