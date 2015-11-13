@@ -678,8 +678,8 @@
             <Field Name="GFX2" Type="String:128" />
             <Field Name="SFX" Type="String:128" />
             <ValueRangeInt Name="ItemGrade" />
-            <Field Name="Enhance" Type="Int32" />
-            <Field Name="EnhanceScale" Type="Int32" />
+            <Field Name="AttackBonus" Type="Int32" />
+            <Field Name="AttackBonusScale" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Array Name="BonusesId" Type="Int32" Length="4" />
