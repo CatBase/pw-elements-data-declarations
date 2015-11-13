@@ -606,7 +606,7 @@
             <Field Name="GFX1" Type="String:128" />
             <Field Name="GFX2" Type="String:128" />
             <Field Name="SFX" Type="String:128" />
-            <ValueRangeInt Name="ItemGrade" />
+            <ValueRangeInt Name="RequiredItemGrade" />
             <Field Name="AttackBonus" Type="Int32" />
             <Field Name="AttackBonusScale" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1835,7 +1835,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="Mask" Type="Int32" />
-            <ValueRangeInt Name="ItemGrade" />
+            <ValueRangeInt Name="RequiredItemGrade" />
             <Field Name="Duration" Type="Int32" />
             <Matter Name="Material" Count="8" />
             <Array Name="BonusChances" Type="Single" Length="4" />
