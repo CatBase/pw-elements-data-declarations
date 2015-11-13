@@ -285,7 +285,7 @@
             <Field Name="AmmoType" Type="Int32" />
             <Field Name="ModelRight" Type="String:128" />
             <Field Name="ModelLeft" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="RequiredStrength" Type="Int32" />
             <Field Name="RequiredDexterity" Type="Int32" />
@@ -341,7 +341,7 @@
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="RealName" Type="String:32" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
@@ -402,7 +402,7 @@
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredStrength" Type="Int32" />
@@ -455,7 +455,7 @@
             <Field Name="TypeId" Type="Int32" />
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="Delay" Type="Int32" />
@@ -482,7 +482,7 @@
             <Field Name="TypeId" Type="Int32" />
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -502,7 +502,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="CharmType" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -521,7 +521,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="GFX" Type="String:128" />
             <Field Name="SFX" Type="String:128" />
@@ -544,7 +544,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Class" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -556,7 +556,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -578,7 +578,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -593,7 +593,7 @@
         <List Name="Town Scrolls" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="CastTime" Type="Single" />
             <Field Name="SellPrice" Type="Int32" />
@@ -605,7 +605,7 @@
         <List Name="Union Scrolls" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="CastTime" Type="Single" />
             <Field Name="SellPrice" Type="Int32" />
@@ -617,7 +617,7 @@
         <List Name="Tools" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="CastTime" Type="Single" />
             <Field Name="Delay" Type="Int32" />
@@ -630,7 +630,7 @@
         <List Name="Chi Stones" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -651,7 +651,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="GFX1" Type="String:128" />
             <Field Name="GFX2" Type="String:128" />
@@ -677,7 +677,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="Name" Type="UString:192" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="GFX1" Type="String:128" />
             <Field Name="GFX2" Type="String:128" />
@@ -700,7 +700,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="ItemId" Type="Int32" />
             <ValueRangeInt Name="AmmoAmount" />
@@ -713,7 +713,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="SoulgemType" Type="Int32" />
@@ -1133,7 +1133,7 @@
         <List Name="Gift Boxes" Interface="IElementsItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Chance Name="TaskChances" Count="20" />
             <Field Name="UseOnPickUp" Type="Int32" />
@@ -1145,7 +1145,7 @@
         <List Name="TaskMatters" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1213,7 +1213,7 @@
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="RealName" Type="String:32" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
@@ -1246,7 +1246,7 @@
             <Field Name="TypeId" Type="Int32" />
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="FaceData" Type="String:128" />
@@ -1270,7 +1270,7 @@
             <Field Name="TypeId" Type="Int32" />
             <Field Name="SubTypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Duration" Type="Int32" />
             <Field Name="CameraScale" Type="Single" />
@@ -1298,7 +1298,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Group" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="MonsterId" Type="Int32" />
             <Field Name="MaxCount" Type="Int32" />
@@ -1376,7 +1376,7 @@
         <List Name="Eggs" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="PetId" Type="Int32" />
             <Field Name="IncubationCost" Type="Int32" />
@@ -1480,7 +1480,7 @@
         <List Name="Medicines" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="BonusId" Type="Int32" />
@@ -1494,7 +1494,7 @@
         <List Name="Refining Orbs" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Tip" Type="UString:32" />
             <Field Name="Safe" Type="Single" />
@@ -1512,7 +1512,7 @@
         <List Name="Destroying Bound Item Services" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1545,7 +1545,7 @@
         <List Name="Heaven Books" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Array Name="Bonuses" Type="Int32" Length="10" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1559,7 +1559,7 @@
         <List Name="Smilies" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SmileId" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1571,7 +1571,7 @@
         <List Name="HP Hierograms" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Amount" Type="Int32" />
             <Field Name="TriggerAmount" Type="Single" />
@@ -1585,7 +1585,7 @@
         <List Name="MP Hierograms" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Amount" Type="Int32" />
             <Field Name="TriggerAmount" Type="Single" />
@@ -1599,7 +1599,7 @@
         <List Name="Training Esotericas" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Duration" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
@@ -1611,7 +1611,7 @@
         <List Name="Teleport Scrolls" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1622,7 +1622,7 @@
         <List Name="Dyes" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <ValueRangeSingle Name="H" />
             <ValueRangeSingle Name="S" />
@@ -1641,7 +1641,7 @@
             <Field Name="Model2" Type="String:128" />
             <Field Name="Model3" Type="String:128" />
             <Field Name="Model4" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon1" Type="String:128" />
             <Field Name="Icon2" Type="String:128" />
             <Field Name="Icon3" Type="String:128" />
@@ -1670,7 +1670,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="TypeId" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Slot" Type="Int32" />
             <Field Name="RequiredGenieLevel" Type="Int32" />
@@ -1692,7 +1692,7 @@
         <List Name="Genie Exp Cubes" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Exp" Type="Int32" />
             <Field Name="RequiredGenieLevel" Type="Int32" />
@@ -1706,7 +1706,7 @@
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
             <Field Name="Model" Type="String:128" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellSlotsCount" Type="Int32" />
             <Field Name="BuySlotsCount" Type="Int32" />
@@ -1720,7 +1720,7 @@
         <List Name="Skill Charms" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="UsePerTimeCount" Type="Int32" />
             <Field Name="WorldsCount" Type="Int32" />
@@ -1737,7 +1737,7 @@
         <List Name="Wards" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1771,7 +1771,7 @@
         <List Name="Craft Enchantments" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Skill Name="Skill" />
             <Field Name="Rate" Type="Single" />
@@ -1796,7 +1796,7 @@
         <List Name="Queuing Proofs" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Year" Type="Int32" />
             <Field Name="Month" Type="Int32" />
@@ -1810,7 +1810,7 @@
         <List Name="Wedding Cards" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
@@ -1821,7 +1821,7 @@
         <List Name="Runes" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="Mask" Type="Int32" />
@@ -1893,7 +1893,7 @@
         <List Name="Guild Materials Packs" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="EthersteelCount" Type="Int32" />
             <Field Name="LostSandCount" Type="Int32" />
@@ -2073,7 +2073,7 @@
         <List Name="Money Convertible" Interface="IElementsRecord">
             <Field Name="Id" Type="Int32" />
             <Field Name="Name" Type="UString:64" />
-            <Field Name="MatterModel" Type="String:128" />
+            <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
