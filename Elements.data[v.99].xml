@@ -1403,7 +1403,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="PetId" Type="Int32" />
             <Field Name="IncubationPrice" Type="Int32" />
-            <Field Name="RestoreCost" Type="Int32" />
+            <Field Name="RecoveryPrice" Type="Int32" />
             <Field Name="Loyalty" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="PetExp" Type="Int32" />
