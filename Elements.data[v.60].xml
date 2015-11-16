@@ -1384,7 +1384,7 @@
             <Field Name="Name" Type="UString:64" />
             <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="Tip" Type="UString:32" />
+            <Field Name="Description" Type="UString:32" />
             <Field Name="Safe" Type="Single" />
             <Field Name="Chance" Type="Single" />
             <Field Name="StaticChance" Type="Int32" />
