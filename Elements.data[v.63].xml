@@ -211,7 +211,7 @@
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="RequiredReputation" Type="Int32" />
+            <Field Name="RequiredRank" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <Field Name="MinPhysicalAttack" Type="Int32" />
@@ -269,7 +269,7 @@
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="RequiredReputation" Type="Int32" />
+            <Field Name="RequiredRank" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalDefence" />
             <ValueRangeInt Name="MagicalDefenceMetal" />
@@ -329,7 +329,7 @@
             <Field Name="RequiredVitality" Type="Int32" />
             <Field Name="ClassMask" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="RequiredReputation" Type="Int32" />
+            <Field Name="RequiredRank" Type="Int32" />
             <Field Name="FixedProps" Type="Int32" />
             <ValueRangeInt Name="PhysicalAttack" />
             <ValueRangeInt Name="MagicalAttack" />
