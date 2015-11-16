@@ -1421,7 +1421,7 @@
             <Field Name="SuccessChance" Type="Single" />
             <Field Name="StaticChance" Type="Int32" />
             <Array Name="SuccessChance" Type="Single" Length="12" />
-            <Field Name="BindingOnly" Type="Int32" />
+            <Field Name="IsBindedOnly" Type="Int32" />
             <Field Name="MaxRequiredItemGrade" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
