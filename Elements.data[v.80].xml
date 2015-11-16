@@ -1463,8 +1463,8 @@
             <Field Name="Description" Type="UString:32" />
             <Field Name="ResetChance" Type="Single" />
             <Field Name="SuccessChance" Type="Single" />
-            <Field Name="IsRandomSuccessChance" Type="Int32" />
-            <Array Name="SuccessChances" Type="Single" Length="12" />
+            <Field Name="IsSuccessChancePerLevel" Type="Int32" />
+            <Array Name="SuccessChancesPerLevel" Type="Single" Length="12" />
             <Field Name="IsBindedOnly" Type="Int32" />
             <Field Name="MaxRequiredItemGrade" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
