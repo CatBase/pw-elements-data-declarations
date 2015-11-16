@@ -321,7 +321,7 @@
             <Field Name="RealName" Type="String:32" />
             <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="EquipLocation" Type="Int32" />
+            <Field Name="EquipmentSlotId" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredStrength" Type="Int32" />
             <Field Name="RequiredDexterity" Type="Int32" />
@@ -1189,7 +1189,7 @@
             <Field Name="RealName" Type="String:32" />
             <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
-            <Field Name="EquipLocation" Type="Int32" />
+            <Field Name="EquipmentSlotId" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
             <Field Name="RepaintDyeCost" Type="Int32" />
