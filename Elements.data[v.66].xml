@@ -1403,7 +1403,7 @@
             <Field Name="Description" Type="UString:32" />
             <Field Name="SafeChance" Type="Single" />
             <Field Name="SuccessChance" Type="Single" />
-            <Field Name="StaticChance" Type="Int32" />
+            <Field Name="IsRandomSuccessChance" Type="Int32" />
             <Array Name="SuccessChance" Type="Single" Length="12" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
