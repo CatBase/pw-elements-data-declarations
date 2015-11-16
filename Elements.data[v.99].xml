@@ -317,8 +317,8 @@
             <Field Name="AttackRange" Type="Single" />
             <Field Name="ShortRangeMode" Type="Int32" />
             <ValueRangeInt Name="Durability" />
-                int levelup_addon  <Field Name="RefineId" Type="Int32" />
-                int material_need  <Field Name="RefineMaterialAmount" Type="Int32" />
+            <Field Name="RefineId" Type="Int32" />
+            <Field Name="RefineMaterialAmount" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="RepairPrice" Type="Int32" />
