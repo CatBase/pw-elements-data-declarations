@@ -1218,7 +1218,7 @@
             <Field Name="EquipLocation" Type="Int32" />
             <Field Name="Grade" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="RequiredDye" Type="Int32" />
+            <Field Name="RepaintDyeCost" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="SexMask" Type="Int32" />
