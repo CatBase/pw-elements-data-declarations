@@ -1785,14 +1785,14 @@
             <Field Name="RequiredPhoenixLevel" Type="Int32" />
             <Field Name="RequiredTigerLevel" Type="Int32" />
             <Field Name="Price" Type="Int32" />
-            <Field Name="RequiredSteel" Type="Int32" />
-            <Field Name="RequiredSand" Type="Int32" />
-            <Field Name="RequiredStone" Type="Int32" />
-            <Field Name="RequiredWater" Type="Int32" />
-            <Field Name="RequiredWood" Type="Int32" />
-            <Field Name="RequiredMaterial6" Type="Int32" />
-            <Field Name="RequiredMaterial7" Type="Int32" />
-            <Field Name="RequiredMaterial8" Type="Int32" />
+            <Field Name="SteelCost" Type="Int32" />
+            <Field Name="SandCost" Type="Int32" />
+            <Field Name="StoneCost" Type="Int32" />
+            <Field Name="WaterCost" Type="Int32" />
+            <Field Name="WoodCost" Type="Int32" />
+            <Field Name="Material6Cost" Type="Int32" />
+            <Field Name="Material7Cost" Type="Int32" />
+            <Field Name="Material8Cost" Type="Int32" />
             <Field Name="BaseTime" Type="Int32" />
             <Field Name="DeltaTime" Type="Int32" />
             <Field Name="ControllerId0" Type="Int32" />
