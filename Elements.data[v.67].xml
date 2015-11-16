@@ -1276,7 +1276,7 @@
             <Field Name="GroupLimit" Type="Int32" />
             <Field Name="ImmuneType" Type="Int32" />
             <Field Name="PlayerGainSkill" Type="Int32" />
-            <Field Name="RequireDyeCount" Type="Int32" />
+            <Field Name="RepaintDyeCost" Type="Int32" />
         </List>
         <List Name="Eggs" Interface="IElementTradableItemRecord">
             <Field Name="Id" Type="Int32" />

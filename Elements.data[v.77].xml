@@ -1319,7 +1319,7 @@
             <Field Name="GroupLimit" Type="Int32" />
             <Field Name="ImmuneType" Type="Int32" />
             <Field Name="PlayerGainSkill" Type="Int32" />
-            <Field Name="RequireDyeCount" Type="Int32" />
+            <Field Name="RepaintDyeCost" Type="Int32" />
             <Field Name="PetEvolvedEggId" Type="Int32" />
             <Field Name="CostIndex" Type="Int32" />
             <Field Name="HpInheritMaxRate" Type="Int32" />
