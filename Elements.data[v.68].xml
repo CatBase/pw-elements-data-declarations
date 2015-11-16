@@ -174,8 +174,8 @@
         <Struct Name="AreaLimits">
             <Field Name="WorldId" Type="Int32" />
             <Field Name="RequiredLevel" Type="Int32" />
-            <Field Name="RequiredReplyLevel" Type="Int32" />
-            <Field Name="RequiredReplyLevel2" Type="Int32" />
+            <Field Name="RequiredSummonedLevel" Type="Int32" />
+            <Field Name="RequiredSummonedLevel2" Type="Int32" />
         </Struct>
         <Struct Name="AwardChoice">
             <Field Name="Time" Type="Int32" />
