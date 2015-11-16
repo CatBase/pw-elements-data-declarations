@@ -1468,7 +1468,7 @@
             <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Description" Type="UString:32" />
-            <Field Name="SafeChance" Type="Single" />
+            <Field Name="ResetChance" Type="Single" />
             <Field Name="StaticSuccessChance" Type="Single" />
             <Field Name="IsRandomSuccessChance" Type="Int32" />
             <Array Name="SuccessChances" Type="Single" Length="12" />

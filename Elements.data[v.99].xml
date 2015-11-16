@@ -317,8 +317,8 @@
             <Field Name="AttackRange" Type="Single" />
             <Field Name="ShortRangeMode" Type="Int32" />
             <ValueRangeInt Name="Durability" />
-            <Field Name="RefineId" Type="Int32" />
-            <Field Name="RefineMaterialAmount" Type="Int32" />
+                int levelup_addon  <Field Name="RefineId" Type="Int32" />
+                int material_need  <Field Name="RefineMaterialAmount" Type="Int32" />
             <Field Name="SellPrice" Type="Int32" />
             <Field Name="BuyPrice" Type="Int32" />
             <Field Name="RepairPrice" Type="Int32" />
@@ -1520,7 +1520,7 @@
             <Field Name="ModelMatter" Type="String:128" />
             <Field Name="Icon" Type="String:128" />
             <Field Name="Description" Type="UString:32" />
-            <Field Name="SafeChance" Type="Single" />
+            <Field Name="ResetChance" Type="Single" />
             <Field Name="StaticSuccessChance" Type="Single" />
             <Field Name="IsRandomSuccessChance" Type="Int32" />
             <Array Name="SuccessChances" Type="Single" Length="12" />
