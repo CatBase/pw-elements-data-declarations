@@ -1489,7 +1489,7 @@
             <Field Name="Icon" Type="String:128" />
             <Field Name="Description" Type="UString:32" />
             <Field Name="SafeChance" Type="Single" />
-            <Field Name="SuccessChance" Type="Single" />
+            <Field Name="StaticSuccessChance" Type="Single" />
             <Field Name="IsRandomSuccessChance" Type="Int32" />
             <Array Name="SuccessChances" Type="Single" Length="12" />
             <Field Name="IsBindedOnly" Type="Int32" />
